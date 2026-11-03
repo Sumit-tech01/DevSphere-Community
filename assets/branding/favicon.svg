@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="devsphereFaviconTitle devsphereFaviconDesc">
+  <title id="devsphereFaviconTitle">DevSphere icon</title>
+  <desc id="devsphereFaviconDesc">A rounded navy app icon containing a small geometric sphere with a letter D and connected nodes.</desc>
+
+  <defs>
+    <linearGradient id="iconRing" x1="8" y1="6" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.52" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="iconD" x1="23" y1="19" x2="45" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="iconCore" cx="38%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#1E315F"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="15" fill="#0B1020"/>
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="url(#iconRing)" stroke-opacity="0.55" stroke-width="1.4"/>
+  <circle cx="32" cy="32" r="20" fill="url(#iconCore)" stroke="url(#iconRing)" stroke-width="1.8"/>
+  <ellipse cx="32" cy="32" rx="26" ry="8" transform="rotate(-24 32 32)" fill="none" stroke="#22D3EE" stroke-opacity="0.45" stroke-width="1.1"/>
+  <path d="M25 21V43H31C39 43 43 38 43 32C43 26 39 21 31 21Z" fill="none" stroke="url(#iconD)" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="25" cy="21" r="1.9" fill="#67E8F9"/>
+  <circle cx="39" cy="22.5" r="1.6" fill="#A78BFA"/>
+  <circle cx="43" cy="32" r="1.9" fill="#22D3EE"/>
+  <circle cx="32" cy="43" r="1.6" fill="#A78BFA"/>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-labelledby="devsphereBannerTitle devsphereBannerDesc">
+  <title id="devsphereBannerTitle">DevSphere community banner</title>
+  <desc id="devsphereBannerDesc">A midnight navy banner with the DevSphere sphere mark, the words DEVSPHERE, the tagline Connect. Code. Collaborate. Create., and a global developer community label.</desc>
+
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1280" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.55" stop-color="#0D1530"/>
+      <stop offset="1" stop-color="#111C3A"/>
+    </linearGradient>
+    <linearGradient id="ringGradient" x1="80" y1="60" x2="400" y2="370" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="dGradient" x1="170" y1="140" x2="310" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="wordGradient" x1="520" y1="0" x2="840" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="sphereCore" cx="38%" cy="28%" r="82%">
+      <stop offset="0" stop-color="#1E315F"/>
+      <stop offset="0.5" stop-color="#111C3A"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="bannerClip">
+      <rect width="1280" height="400" rx="28"/>
+    </clipPath>
+    <clipPath id="sphereClip">
+      <circle cx="256" cy="256" r="162"/>
+    </clipPath>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+    <rect width="1280" height="400" fill="url(#bgGradient)"/>
+    <rect width="1280" height="400" fill="url(#grid)"/>
+    <circle cx="1080" cy="80" r="300" fill="url(#violetGlow)"/>
+    <circle cx="210" cy="360" r="280" fill="url(#cyanGlow)"/>
+
+    <!-- Decorative orbital system on the right -->
+    <g opacity="0.9">
+      <circle cx="1070" cy="200" r="188" fill="none" stroke="url(#ringGradient)" stroke-opacity="0.2" stroke-width="1.5"/>
+      <circle cx="1070" cy="200" r="132" fill="none" stroke="#22D3EE" stroke-opacity="0.14" stroke-width="1.2"/>
+      <ellipse cx="1070" cy="200" rx="230" ry="74" transform="rotate(-22 1070 200)" fill="none" stroke="#22D3EE" stroke-opacity="0.22" stroke-width="1.6"/>
+      <ellipse cx="1070" cy="200" rx="230" ry="80" transform="rotate(58 1070 200)" fill="none" stroke="#8B5CF6" stroke-opacity="0.2" stroke-width="1.6"/>
+      <path d="M946 106 1044 78 1164 132 1190 228 1114 304 1000 278 930 196Z" fill="none" stroke="#60A5FA" stroke-opacity="0.18" stroke-width="1.2"/>
+      <g fill="#67E8F9">
+        <circle cx="946" cy="106" r="4"/>
+        <circle cx="1164" cy="132" r="3.5" fill="#A78BFA"/>
+        <circle cx="1190" cy="228" r="4.5"/>
+        <circle cx="1000" cy="278" r="3.5" fill="#A78BFA"/>
+        <circle cx="930" cy="196" r="3"/>
+      </g>
+      <circle cx="1070" cy="200" r="5" fill="#F8FAFC"/>
+    </g>
+
+    <line x1="788" y1="92" x2="788" y2="308" stroke="#94A3B8" stroke-opacity="0.14" stroke-width="1"/>
+
+    <!-- Community label -->
+    <rect x="76" y="46" width="286" height="34" rx="17" fill="#22D3EE" fill-opacity="0.08" stroke="#22D3EE" stroke-opacity="0.35"/>
+    <circle cx="97" cy="63" r="4" fill="#22D3EE"/>
+    <text x="112" y="68" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="600" letter-spacing="2.3" fill="#A5F3FC">GLOBAL DEVELOPER COMMUNITY</text>
+
+    <!-- Mark -->
+    <g transform="translate(58 96) scale(0.42)">
+      <ellipse cx="256" cy="256" rx="212" ry="70" transform="rotate(-24 256 256)" fill="none" stroke="#22D3EE" stroke-opacity="0.32" stroke-width="2"/>
+      <ellipse cx="256" cy="256" rx="212" ry="74" transform="rotate(58 256 256)" fill="none" stroke="#8B5CF6" stroke-opacity="0.26" stroke-width="2"/>
+      <circle cx="256" cy="256" r="162" fill="url(#sphereCore)" stroke="url(#ringGradient)" stroke-width="3"/>
+      <path d="M146 120A162 162 0 0 1 358 128" fill="none" stroke="#F8FAFC" stroke-opacity="0.22" stroke-width="2" stroke-linecap="round"/>
+      <g clip-path="url(#sphereClip)">
+        <g fill="none" stroke="#67E8F9" stroke-opacity="0.13" stroke-width="1.4">
+          <ellipse cx="256" cy="256" rx="56" ry="162"/>
+          <ellipse cx="256" cy="256" rx="112" ry="162"/>
+          <ellipse cx="256" cy="256" rx="162" ry="48"/>
+          <ellipse cx="256" cy="256" rx="162" ry="98"/>
+          <line x1="94" y1="256" x2="418" y2="256"/>
+        </g>
+        <g fill="none" stroke="#22D3EE" stroke-opacity="0.3" stroke-width="2">
+          <path d="M176 190 246 158 326 200 334 286 278 342 188 318Z"/>
+          <path d="M256 256 176 190M256 256 326 200M256 256 278 342M256 256 188 318"/>
+        </g>
+        <path d="M200 166V346H246C312 346 346 308 346 256C346 204 312 166 246 166Z" fill="none" stroke="url(#dGradient)" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+        <g>
+          <circle cx="176" cy="190" r="6" fill="#67E8F9"/>
+          <circle cx="246" cy="158" r="5" fill="#A78BFA"/>
+          <circle cx="326" cy="200" r="6.5" fill="#22D3EE"/>
+          <circle cx="334" cy="286" r="5" fill="#60A5FA"/>
+          <circle cx="278" cy="342" r="6" fill="#A78BFA"/>
+          <circle cx="188" cy="318" r="5" fill="#67E8F9"/>
+          <circle cx="256" cy="256" r="7" fill="#F8FAFC"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Wordmark -->
+    <text x="300" y="214" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="3">
+      <tspan fill="#F8FAFC">DEV</tspan><tspan fill="url(#wordGradient)">SPHERE</tspan>
+    </text>
+    <text x="304" y="260" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="4.2" fill="#94A3B8">CONNECT. CODE. COLLABORATE. CREATE.</text>
+    <text x="304" y="302" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#64748B">Learn, build, and grow with developers around the world.</text>
+
+    <text x="76" y="366" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" letter-spacing="0.4" fill="#64748B">github.com/Sumit-tech01/DevSphere-Community</text>
+  </g>
+</svg>
