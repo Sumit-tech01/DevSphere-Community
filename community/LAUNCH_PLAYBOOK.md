@@ -140,6 +140,8 @@ The full procedure is in the [Discussion Setup Guide](DISCUSSION_SETUP.md). This
 
 ### Manual checklist
 
+> **Important:** enter the emoji with the emoji picker, not in the **Name** field. A category named `💬 General Discussion` produces a slug beginning with a hyphen (`-general-discussion`) and is not the target configuration. The **Name** field should contain only the text, for example `General Discussion`, with 💬 selected separately.
+
 - [ ] Open Discussions → pencil icon beside **Categories** → **Manage discussion categories**.
 - [ ] Keep **Announcements** and confirm its format is **Announcement**.
 - [ ] Rename **General** to **General Discussion** with the 💬 emoji and open-ended format.
@@ -165,6 +167,14 @@ The full procedure is in the [Discussion Setup Guide](DISCUSSION_SETUP.md). This
 ### Verification command
 
 Run this after setup:
+
+```bash
+python3 scripts/verify_discussions.py
+```
+
+The script is read-only. It checks the category count, names, formats, discussion placement, and pinned posts. It exits with status `1` until every required check passes.
+
+For a raw category listing:
 
 ```bash
 gh api graphql -f query='
