@@ -55,7 +55,7 @@ You need **maintain** or **admin** permission on the repository.
 
 ### Step 1 — Confirm Discussions is enabled
 
-1. Open [Repository Settings → General](https://github.com/Sumit-tech01/DevSphere-Community/settings).
+1. Open the repository on GitHub, then go to **Settings → General**. The **Settings** tab is visible only to users with maintain or admin permission.
 2. In the **Features** section, confirm **Discussions** is checked.
 3. If it is not checked, enable it and save. This is a one-time setting.
 
