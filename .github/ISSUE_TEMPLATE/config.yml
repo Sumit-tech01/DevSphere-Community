@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question in DevSphere Discussions
+    url: https://github.com/Sumit-tech01/DevSphere-Community/discussions
+    about: Get help, share a project, find collaborators, or join the community.
+  - name: Read the Support Guide
+    url: https://github.com/Sumit-tech01/DevSphere-Community/blob/main/SUPPORT.md
+    about: Find the right place for questions, bugs, and private concerns.
+  - name: Report a security vulnerability
+    url: https://github.com/Sumit-tech01/DevSphere-Community/security/policy
+    about: Please report vulnerabilities privately. Never disclose them in a public issue.
+  - name: Report a conduct or safety concern
+    url: https://github.com/Sumit-tech01/DevSphere-Community/blob/main/CODE_OF_CONDUCT.md
+    about: Follow the private reporting guidance in the Code of Conduct.
