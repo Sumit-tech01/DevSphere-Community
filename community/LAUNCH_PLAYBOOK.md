@@ -193,6 +193,8 @@ Expected results:
 - Every other category has `false`.
 - No Ideas, Polls, Q&A, or Show and tell rows.
 
+The GraphQL API returns categories alphabetically, not in sidebar order. Check the visible order in the GitHub interface.
+
 ### Discussion placement check
 
 ```bash

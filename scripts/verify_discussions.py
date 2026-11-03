@@ -146,8 +146,8 @@ def main() -> int:
     if len(categories) != 12:
         failures.append(f"Expected 12 categories, found {len(categories)}")
 
-    if [category["name"] for category in categories] != [name for name, _ in EXPECTED_CATEGORIES]:
-        warnings.append("Category order differs from the target order; reorder in the GitHub UI.")
+    # The API returns categories alphabetically, not in sidebar order. Verify
+    # sidebar order in the GitHub interface instead of guessing from this list.
 
     print()
     print("Discussions:")
