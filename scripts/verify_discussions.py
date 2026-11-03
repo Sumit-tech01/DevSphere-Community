@@ -161,6 +161,8 @@ def main() -> int:
         category = discussion["category"]["name"]
         if category == expected_category:
             print(f"  [x] #{number} {discussion['title']} -> {category}")
+        elif category.endswith(expected_category):
+            print(f"  [x] #{number} {discussion['title']} -> {category} (category name needs cleanup)")
         else:
             print(f"  [ ] #{number} {discussion['title']} -> {category} (expected {expected_category})")
             failures.append(f"Discussion #{number} is in {category}, expected {expected_category}")

@@ -4,7 +4,7 @@ This playbook covers the public launch of DevSphere: the 14-day publishing sched
 
 It does **not** replace the [Community Guidelines](COMMUNITY_GUIDELINES.md), [Moderation Policy](MODERATION_POLICY.md), or [Discussion Setup Guide](DISCUSSION_SETUP.md). It is the operating plan that ties them together.
 
-> **Status at preparation (3 November 2026):** the repository, documentation, branding, and discussion drafts are complete. The 12-category Discussions structure, the social preview upload, and the movement of discussions #2 and #3 are pending manual GitHub configuration.
+> **Status (3 November 2026):** the repository, documentation, branding, and discussion drafts are complete. The social preview is uploaded and verified. Category names, formats, legacy-category cleanup, and pinned posts require manual attention. Run `python3 scripts/verify_discussions.py` for the current GitHub state.
 
 ---
 
@@ -60,7 +60,7 @@ Complete this before the launch post goes live.
 | Move #2 to Introductions | Discussions | Pending categories |
 | Move #3 to Project Showcase | Discussions | Pending categories |
 | Publish the "Start Here" post | Introductions | Pending |
-| Upload the social preview | Settings → General | Pending |
+| Upload the social preview | Settings → General | Verified uploaded 3 November 2026 |
 | Confirm CI is green | Actions | Verified |
 | Re-check all launch links | Repository | Verified at preparation |
 | Prepare the founder introduction | General Discussion | Drafted below |
@@ -130,38 +130,36 @@ Do not rush these into the first 14 days:
 
 The full procedure is in the [Discussion Setup Guide](DISCUSSION_SETUP.md). This is the execution checklist for the current repository state.
 
-### Current state
+### State observed on 3 November 2026
 
 - Discussions is enabled.
-- Six default categories exist: Announcements, General, Ideas, Polls, Q&A, Show and tell.
-- Three discussions exist, all in Announcements.
-- Ideas and Polls contain no discussions, so they can be removed safely after confirming in the interface.
+- All 12 target categories exist, but 11 of them have the emoji embedded in the **Name** field. This produces slugs that begin with a hyphen, such as `-general-discussion`.
+- Four legacy categories remain: Ideas, Polls, Q&A, and Show and tell. They contain no discussions and can be deleted.
+- Discussion #1 is in Announcements, #2 is in Introductions, and #3 is in Project Showcase. Their URLs did not change when #2 and #3 were moved.
+- #1 is pinned. #2 and #3 still need to be pinned manually.
 - No discussion category creation API, REST endpoint, or `gh` command is available.
 
 ### Manual checklist
 
-> **Important:** enter the emoji with the emoji picker, not in the **Name** field. A category named `💬 General Discussion` produces a slug beginning with a hyphen (`-general-discussion`) and is not the target configuration. The **Name** field should contain only the text, for example `General Discussion`, with 💬 selected separately.
+> **Fix names in place.** Select the category, remove the emoji from the **Name** field, and choose the emoji with the picker. Do not delete and recreate a target category that already contains a discussion; deleting a category can move its discussions.
 
-- [ ] Open Discussions → pencil icon beside **Categories** → **Manage discussion categories**.
-- [ ] Keep **Announcements** and confirm its format is **Announcement**.
-- [ ] Rename **General** to **General Discussion** with the 💬 emoji and open-ended format.
-- [ ] Rename **Q&A** to **Questions & Help** with the 🙋 emoji and question-and-answer format.
-- [ ] Rename **Show and tell** to **Project Showcase** with the 🚀 emoji and open-ended format.
-- [ ] Create **Introductions** with the 👋 emoji.
-- [ ] Create **Programming** with the 💻 emoji.
-- [ ] Create **AI & Machine Learning** with the 🤖 emoji.
-- [ ] Create **Web Development** with the 🌐 emoji.
-- [ ] Create **App Development** with the 📱 emoji.
-- [ ] Create **Hackathons & Challenges** with the 🏆 emoji.
-- [ ] Create **Collaboration** with the 🤝 emoji.
-- [ ] Create **Career & Opportunities** with the 🎓 emoji.
-- [ ] Delete **Ideas** and **Polls** after confirming both are empty.
-- [ ] Order the categories: Announcements, Introductions, General Discussion, Programming, AI & Machine Learning, Web Development, App Development, Project Showcase, Questions & Help, Hackathons & Challenges, Collaboration, Career & Opportunities.
+- [ ] **Announcements** — keep the name plain and the 📣 emoji; confirm the **Announcement** format.
+- [ ] **Introductions** — Name `Introductions`, emoji 👋, open-ended format.
+- [ ] **General Discussion** — Name `General Discussion`, emoji 💬, open-ended format.
+- [ ] **Programming** — Name `Programming`, emoji 💻, open-ended format.
+- [ ] **AI & Machine Learning** — Name `AI & Machine Learning`, emoji 🤖, open-ended format.
+- [ ] **Web Development** — Name `Web Development`, emoji 🌐, open-ended format.
+- [ ] **App Development** — Name `App Development`, emoji 📱, open-ended format.
+- [ ] **Project Showcase** — Name `Project Showcase`, emoji 🚀, open-ended format.
+- [ ] **Questions & Help** — Name `Questions & Help`, emoji 🙋, question-and-answer format.
+- [ ] **Hackathons & Challenges** — Name `Hackathons & Challenges`, emoji 🏆, open-ended format.
+- [ ] **Collaboration** — Name `Collaboration`, emoji 🤝, open-ended format.
+- [ ] **Career & Opportunities** — Name `Career & Opportunities`, emoji 🎓, open-ended format.
+- [ ] Delete **Ideas**, **Polls**, **Q&A**, and **Show and tell** after confirming each is empty.
 - [ ] Confirm the final count is exactly 12.
-- [ ] Move #2 to Introductions.
-- [ ] Move #3 to Project Showcase.
-- [ ] Keep #1 in Announcements and pinned.
-- [ ] Pin #2 and #3.
+- [ ] Order the categories: Announcements, Introductions, General Discussion, Programming, AI & Machine Learning, Web Development, App Development, Project Showcase, Questions & Help, Hackathons & Challenges, Collaboration, Career & Opportunities.
+- [ ] Confirm #1 is in Announcements, #2 is in Introductions, and #3 is in Project Showcase.
+- [ ] Pin #2 and #3. GitHub's GraphQL API exposes no discussion-pin mutation, so use the web interface.
 - [ ] Verify every category link opens without a 404.
 
 ### Verification command
@@ -193,7 +191,7 @@ Expected results:
 - Announcements is present.
 - Questions & Help has `true` for `isAnswerable`.
 - Every other category has `false`.
-- No Ideas or Polls rows.
+- No Ideas, Polls, Q&A, or Show and tell rows.
 
 ### Discussion placement check
 
@@ -261,7 +259,7 @@ The image contains the DevSphere wordmark, the line "Connect. Code. Collaborate.
 
 ### Upload status
 
-**Not uploaded yet.** At audit time GitHub served its default generated social card (`opengraph.githubassets.com`) at 1200 × 600. No custom social preview is active. GitHub does not expose a public API for uploading this image.
+**Verified uploaded on 3 November 2026.** The repository now serves a custom social card from `repository-images.githubusercontent.com`. The downloaded card is 1280 × 640 PNG and is byte-identical to `assets/branding/social-preview.png` (SHA-256 `e27461d3...4cb334`). GitHub still does not expose a public API for uploading this image, so the setting remains manual.
 
 ### Manual upload steps
 
@@ -591,21 +589,20 @@ Do not post a "we reached X members" update unless the number is real and the de
 - [x] Description, homepage, and 12 topics are set.
 - [x] Discussions is enabled.
 - [x] Discussions #1, #2, and #3 are preserved.
+- [x] #2 is in Introductions and #3 is in Project Showcase; their URLs are unchanged.
 - [x] #1 is pinned in Announcements.
 - [x] Repository validation and Markdown lint pass.
-- [x] The social preview file is 1280 × 640 and visually readable.
+- [x] The social preview file is 1280 × 640, visually readable, uploaded, and verified against the repository OG image.
 - [x] Twelve discussion drafts are reviewed and indexed.
 - [x] Community guidelines, moderation policy, and roles are documented.
 - [x] Launch schedule and growth plan are documented in this playbook.
 
 ### Pending manual actions
 
-- [ ] Create or rename the 12 discussion categories.
-- [ ] Delete the empty Ideas and Polls categories.
-- [ ] Move #2 to Introductions and #3 to Project Showcase.
+- [ ] Remove the embedded emoji from the 11 category names and select each emoji separately.
+- [ ] Delete the empty Ideas, Polls, Q&A, and Show and tell categories.
 - [ ] Pin #2 and #3.
 - [ ] Publish the Start Here post.
-- [ ] Upload the social preview.
 - [ ] Publish the founder introduction.
 - [ ] Publish the LinkedIn announcement.
 - [ ] Update the GitHub profile promotion block.
