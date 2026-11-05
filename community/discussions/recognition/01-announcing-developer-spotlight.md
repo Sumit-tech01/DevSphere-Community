@@ -54,6 +54,8 @@ A nomination does not guarantee selection. A week with no ready profile is a nor
 
 - **Read the handbook:** [Developer Spotlight](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/DEVELOPER_SPOTLIGHT.md)
 - **Nominate a developer:** [Nomination template](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/templates/DEVELOPER_NOMINATION_TEMPLATE.md)
+- **Request a project review:** [Project Review template](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/templates/PROJECT_REVIEW_TEMPLATE.md)
+- **See monthly recognition:** [Builders of the Month](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/BUILDERS_OF_THE_MONTH.md)
 - **See the program map:** [Community Initiatives](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/COMMUNITY_INITIATIVES.md)
 
 If you have a project you are proud of, a contribution that helped someone, or a question about the process, you are welcome here. Beginners are not a future audience; they are part of the community now.

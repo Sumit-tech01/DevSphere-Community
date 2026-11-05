@@ -18,7 +18,7 @@ It is not a roast, a score, or a popularity contest. The goal is one or two chan
 1. Choose **one** project and **one** specific question.
 2. Open a new Project Showcase discussion titled `Project Review Friday — <project name>`.
 3. Include context, links, and the part you want reviewed.
-4. Use the [project showcase template](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/templates/PROJECT_SHOWCASE.md) as a base.
+4. Use the [project review template](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/templates/PROJECT_REVIEW_TEMPLATE.md) as a base.
 5. Do not post only a link. A link drop is not a review request.
 
 ### What to include
@@ -79,7 +79,7 @@ It is not a certification, a ranking, a guarantee of users, or a promise of empl
 ## Start here
 
 - Read the [Community Initiatives guide](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/COMMUNITY_INITIATIVES.md).
-- Use the [project showcase template](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/templates/PROJECT_SHOWCASE.md).
+- Use the [project review template](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/templates/PROJECT_REVIEW_TEMPLATE.md).
 - Read the [Code of Conduct](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/CODE_OF_CONDUCT.md).
 
 **Bring one project, one question, and a willingness to hear an honest answer.**

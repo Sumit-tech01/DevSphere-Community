@@ -1,6 +1,6 @@
 # DevSphere Templates
 
-Reusable formats for proposing projects, finding collaborators, requesting reviews, sharing work, submitting resources, nominating a spotlight, and hosting community activities.
+Reusable formats for proposing projects, finding collaborators, requesting focused project reviews, sharing work, submitting resources, nominating a spotlight, and hosting community activities.
 
 ## How to use a template
 
@@ -21,6 +21,7 @@ Reusable formats for proposing projects, finding collaborators, requesting revie
 | [Collaboration request](COLLABORATION_REQUEST.md) | Asking for help on an existing project | [Collaboration](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration) |
 | [Code review request](CODE_REVIEW_REQUEST.md) | Requesting focused feedback on a change | [Questions & Help](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/questions-help) |
 | [Project showcase](PROJECT_SHOWCASE.md) | Sharing a project and asking for feedback | [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) |
+| [Project review](PROJECT_REVIEW_TEMPLATE.md) | Requesting structured Project Review Friday feedback | [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) |
 | [Project discovery submission](PROJECT_DISCOVERY_SUBMISSION.md) | Submitting a project, tool, app, or learning resource for discovery | [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) |
 | [Resource submission](RESOURCE_SUBMISSION.md) | Suggesting a learning resource | [Issues](https://github.com/Sumit-tech01/DevSphere-Community/issues/new?template=feature_request.md) or a pull request |
 | [Developer nomination](DEVELOPER_NOMINATION_TEMPLATE.md) | Full nomination form for the Developer Spotlight | [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion) |
@@ -46,3 +47,5 @@ Reusable formats for proposing projects, finding collaborators, requesting revie
 - [Project and Resource Discovery](../PROJECT_DISCOVERY.md)
 - [Resource Submission Process](../RESOURCE_SUBMISSION.md)
 - [Developer Spotlight](../DEVELOPER_SPOTLIGHT.md)
+- [Builders of the Month](../BUILDERS_OF_THE_MONTH.md)
+- [Recognition campaign launch kit](../launch/README.md)

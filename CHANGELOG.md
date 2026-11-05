@@ -12,7 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `community/templates/DEVELOPER_SPOTLIGHT_TEMPLATE.md` with the full 17-section interview and permission form, optional-question guidance, and a maintainer checklist.
 - `community/templates/DEVELOPER_NOMINATION_TEMPLATE.md` supporting self-nominations, nominations with permission, open-source contributors, students, independent builders, innovative project creators, and community helpers.
 - `community/COMMUNITY_INITIATIVES.md` documenting Developer Spotlight (weekly slot), Project Review Friday (weekly), Builder of the Month (monthly), and Community Collaboration (ongoing), including schedules, discussion formats, moderation rules, accessibility, and privacy.
+- `community/BUILDERS_OF_THE_MONTH.md` with the monthly recognition process, consent rules, recognition format, and an archive that starts with no invented recipients.
+- `community/templates/PROJECT_REVIEW_TEMPLATE.md` with a submission form, reviewer response format, host checklist, and privacy checks for Project Review Friday.
 - Five ready-to-publish recognition discussion drafts under `community/discussions/recognition/`, with titles, full Markdown bodies, existing discussion categories, suggested schedules, labels, and a manual publishing checklist.
+- `community/launch/` with the first campaign's community announcement, founder introduction, first Spotlight invitation round, first Project Review Friday session, LinkedIn announcement, and publishing-order checklist.
 - `community/PROJECT_DISCOVERY.md` and `community/templates/PROJECT_DISCOVERY_SUBMISSION.md` for open-source projects, developer tools, AI applications, web apps, mobile apps, and learning resources, including link verification, spam prevention, copyright, privacy, and affiliation disclosure.
 - A consent-first private outreach policy and reusable invitation template under `community/outreach/`, with candidate-specific drafts kept out of the published repository so no one is named before accepting.
 - A `🌟 Developer Spotlight` section in the root README with the program introduction, recognition criteria, nomination instructions, participation guidelines, and links to the handbook, templates, and discussion categories.
@@ -22,7 +25,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Renamed the "Best Open-Source Contribution" category to "Open-Source Contribution" so recognition does not imply a ranking.
 - Reconciled the weekly activity calendar with Project Review Friday and added Builder of the Month and Community Collaboration to the monthly/ongoing rhythm.
 - Added recognition labels (`spotlight`, `nomination`, `recognition`, `project-review`, `builder-of-the-month`) to the documented label set.
-- Connected the resource index, resource submission process, template index, discussion index, and community roadmap to the new recognition and discovery documents.
+- Connected the resource index, resource submission process, template index, discussion index, launch playbook, and community roadmap to the new recognition and discovery documents.
+- Added the Builders of the Month archive, Project Review template, and campaign launch kit to the README's recognition resources and the community activity guides.
 - Updated repository validation to require the new files, check recognition draft metadata and categories, validate discussion category URLs, and verify template completeness.
 
 ### Planned

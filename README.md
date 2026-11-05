@@ -379,7 +379,7 @@ The [Developer Spotlight](community/DEVELOPER_SPOTLIGHT.md) is a community thank
 | --- | --- | --- |
 | **Developer Spotlight** | Weekly slot | Features a developer and a project with consent |
 | **[Project Review Friday](community/COMMUNITY_INITIATIVES.md#b-project-review-friday)** | Weekly | Gives specific, constructive feedback on community projects |
-| **[Builder of the Month](community/COMMUNITY_INITIATIVES.md#c-builder-of-the-month)** | Monthly | Recognizes contribution, learning progress, and project development |
+| **[Builder of the Month](community/BUILDERS_OF_THE_MONTH.md)** | Monthly | Recognizes contribution, learning progress, and project development |
 | **[Community Collaboration](community/COMMUNITY_INITIATIVES.md#d-community-collaboration)** | Ongoing | Helps members find collaborators and build together |
 
 ### Recognition categories
@@ -409,6 +409,9 @@ Stars, followers, commit counts, seniority, and posting volume are not selection
 - **Use the nomination form:** [Developer nomination template](community/templates/DEVELOPER_NOMINATION_TEMPLATE.md)
 - **Prepare for an interview:** [Developer Spotlight template](community/templates/DEVELOPER_SPOTLIGHT_TEMPLATE.md)
 - **Submit the nomination:** [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion)
+- **See monthly recognition:** [Builders of the Month](community/BUILDERS_OF_THE_MONTH.md)
+- **Request a structured review:** [Project Review template](community/templates/PROJECT_REVIEW_TEMPLATE.md)
+- **Prepare the campaign launch:** [Recognition campaign launch kit](community/launch/README.md)
 - **See published profiles:** [Announcements](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/announcements)
 
 ### Participation guidelines

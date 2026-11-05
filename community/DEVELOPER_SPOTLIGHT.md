@@ -418,6 +418,8 @@ Use the private reporting route in the [Code of Conduct](../CODE_OF_CONDUCT.md).
 - [Community Initiatives](COMMUNITY_INITIATIVES.md) — the four recognition and engagement programs.
 - [Developer Spotlight interview template](templates/DEVELOPER_SPOTLIGHT_TEMPLATE.md) — the 17-section interview and permission form.
 - [Developer nomination template](templates/DEVELOPER_NOMINATION_TEMPLATE.md) — the full nomination form.
+- [Builders of the Month](BUILDERS_OF_THE_MONTH.md) — the monthly recognition process and archive.
+- [Project Review template](templates/PROJECT_REVIEW_TEMPLATE.md) — structured feedback requests for Project Review Friday.
 - [Project Discovery](PROJECT_DISCOVERY.md) — how projects and resources are submitted and verified.
 - [Community Activities](COMMUNITY_ACTIVITIES.md) — the broader weekly and monthly rhythm.
 - [Community Guidelines](COMMUNITY_GUIDELINES.md) — participation expectations.

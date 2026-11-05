@@ -73,6 +73,6 @@ A nomination does not guarantee recognition. A month with no well-evidenced nomi
 
 ## Questions?
 
-Ask in this thread or in [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion). Read the [Community Initiatives guide](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/COMMUNITY_INITIATIVES.md) for the full schedule and moderation rules.
+Ask in this thread or in [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion). Read the [Community Initiatives guide](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/COMMUNITY_INITIATIVES.md) for the full schedule and moderation rules, and the [Builders of the Month archive](https://github.com/Sumit-tech01/DevSphere-Community/blob/main/community/BUILDERS_OF_THE_MONTH.md) for published recognition.
 
 > **Recognition should make the work easier to see, not make other people feel smaller.**

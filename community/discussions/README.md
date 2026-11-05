@@ -131,4 +131,4 @@ Labels must exist before they can be applied. GitHub does not create labels from
 
 ---
 
-**Related:** [Discussion Setup Guide](../DISCUSSION_SETUP.md) · [Discussion Guide](../DISCUSSION_GUIDE.md) · [Community Guidelines](../COMMUNITY_GUIDELINES.md) · [Moderation Policy](../MODERATION_POLICY.md) · [Developer Spotlight](../DEVELOPER_SPOTLIGHT.md) · [Community Initiatives](../COMMUNITY_INITIATIVES.md) · [Recognition drafts](recognition/README.md)
+**Related:** [Discussion Setup Guide](../DISCUSSION_SETUP.md) · [Discussion Guide](../DISCUSSION_GUIDE.md) · [Community Guidelines](../COMMUNITY_GUIDELINES.md) · [Moderation Policy](../MODERATION_POLICY.md) · [Developer Spotlight](../DEVELOPER_SPOTLIGHT.md) · [Community Initiatives](../COMMUNITY_INITIATIVES.md) · [Builders of the Month](../BUILDERS_OF_THE_MONTH.md) · [Recognition drafts](recognition/README.md) · [Campaign launch kit](../launch/README.md)

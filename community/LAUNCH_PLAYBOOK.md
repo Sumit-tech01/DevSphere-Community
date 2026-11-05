@@ -341,6 +341,10 @@ Publish this on launch day. Keep the link in the post or in the first comment, a
 - Put the direct Introductions link in the first comment.
 - If the post gets questions, answer them in the comments instead of reposting.
 
+### Recognition campaign launch assets
+
+The first Developer Spotlight and Community Recognition campaign has a dedicated launch kit: [community/launch/README.md](launch/README.md). It contains the broader community announcement, a recognition-specific founder introduction, the first Spotlight invitation round, the first Project Review Friday session, and a LinkedIn announcement. Use the kit instead of duplicating the general launch copy above. Do not publish a candidate's name before consent.
+
 ---
 
 ## 8. GitHub profile promotion

@@ -67,6 +67,7 @@ Repository documentation and brand assets are complete as of the planning date. 
 - [x] Publish the collaboration, open-source, spotlight, activities, resource-submission, and growth guides.
 - [x] Add reusable templates for proposals, teammates, collaboration, code review, showcase, resources, spotlight, and activities.
 - [x] Publish the Developer Spotlight handbook, full nomination and interview templates, four community initiative formats, project discovery framework, and recognition discussion drafts.
+- [x] Add the Builders of the Month archive, Project Review template, and first recognition campaign launch kit.
 - [x] Verify the repository's social preview, description, and live category links.
 - [ ] Publish the Developer Spotlight announcement and first Project Review Friday thread when there is capacity to respond.
 - [ ] Publish the weekly feedback thread and any optional seed posts when there is capacity to respond.

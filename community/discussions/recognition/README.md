@@ -28,6 +28,10 @@ Do not repost those launch discussions. These recognition drafts are new program
 
 The schedules are suggestions, not deadlines. Space the posts so each one has time to receive replies. Publishing all five at once is not recommended.
 
+## Campaign launch content
+
+The [recognition campaign launch kit](../../launch/README.md) contains the surrounding launch assets: the broader community announcement, founder introduction, first Spotlight invitation round, first Project Review Friday session, and LinkedIn announcement. Use the kit for the launch sequence and these five drafts for the recurring discussion formats. Do not publish both versions of the same post.
+
 ## Why these categories
 
 DevSphere uses the existing 12-category structure. No new category is required.
@@ -81,6 +85,9 @@ Existing labels such as `announcement`, `community`, `feedback`, `showcase`, and
 
 - [Developer Spotlight handbook](../../DEVELOPER_SPOTLIGHT.md)
 - [Community Initiatives](../../COMMUNITY_INITIATIVES.md)
+- [Builders of the Month](../../BUILDERS_OF_THE_MONTH.md)
+- [Project Review template](../../templates/PROJECT_REVIEW_TEMPLATE.md)
+- [Recognition campaign launch kit](../../launch/README.md)
 - [Project and Resource Discovery](../../PROJECT_DISCOVERY.md)
 - [Main discussion index](../README.md)
 - [Discussion Setup Guide](../../DISCUSSION_SETUP.md)

@@ -115,7 +115,7 @@ A host may skip a Friday when there are no submissions or no reviewers available
    - Known limitations.
    - The specific feedback you want: usability, accessibility, performance, code structure, documentation, naming, or positioning.
    - Whether you want collaborators or only feedback.
-4. Use the [project showcase template](templates/PROJECT_SHOWCASE.md) as a base.
+4. Use the [project review template](templates/PROJECT_REVIEW_TEMPLATE.md) as a base.
 5. Do not post only a link. A link drop is not a review request.
 
 ### Review format
@@ -172,7 +172,7 @@ Recognize meaningful contribution, learning progress, and project development th
 | Nominations open | First Monday of the month, 09:00 UTC | General Discussion |
 | Review | During the month, when nominations exist | Private maintainer review |
 | Recognition post | Late in the month or the first week of the next month, when ready | Announcements |
-| Index update | After publication | [Spotlight handbook](DEVELOPER_SPOTLIGHT.md) |
+| Index update | After publication | [Builders of the Month](BUILDERS_OF_THE_MONTH.md) |
 
 The schedule is a target, not a promise. A month with no well-evidenced nomination may pass without a recognition post.
 
@@ -356,4 +356,7 @@ Moderators may remove content, lock a thread, or pause a program to protect the 
 - [Community Guidelines](COMMUNITY_GUIDELINES.md)
 - [Moderation Policy](MODERATION_POLICY.md)
 - [Recognition discussion drafts](discussions/recognition/README.md)
+- [Builders of the Month](BUILDERS_OF_THE_MONTH.md)
+- [Project review template](templates/PROJECT_REVIEW_TEMPLATE.md)
+- [Recognition campaign launch kit](launch/README.md)
 - [Templates](templates/README.md)

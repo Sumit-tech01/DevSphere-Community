@@ -73,7 +73,7 @@ A structured feedback thread:
 - Feedback in four parts: what works, questions, suggestions, and one next step.
 - A builder response that closes the loop on what changed.
 
-Follow the [Project Review Friday format](COMMUNITY_INITIATIVES.md#b-project-review-friday). Critique the work, not the person, and do not demand unpaid labor. Open-source help remains welcome in [Collaboration](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration); read the [Open-Source Guide](OPEN_SOURCE_GUIDE.md) before offering a contribution.
+Follow the [Project Review Friday format](COMMUNITY_INITIATIVES.md#b-project-review-friday) and use the [project review template](templates/PROJECT_REVIEW_TEMPLATE.md). Critique the work, not the person, and do not demand unpaid labor. Open-source help remains welcome in [Collaboration](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration); read the [Open-Source Guide](OPEN_SOURCE_GUIDE.md) before offering a contribution.
 
 #### Saturday — Project showcase
 
@@ -123,7 +123,7 @@ Use the [Developer Spotlight](DEVELOPER_SPOTLIGHT.md) framework and the [Communi
 
 ### Builder of the Month
 
-Use the same evidence and consent rules as the Spotlight. Recognize meaningful contribution, learning progress, or project development. There is no prize, ranking, or requirement to choose a recipient every month. Read the [Builder of the Month format](COMMUNITY_INITIATIVES.md#c-builder-of-the-month).
+Use the same evidence and consent rules as the Spotlight. Recognize meaningful contribution, learning progress, or project development. There is no prize, ranking, or requirement to choose a recipient every month. Read the [Builder of the Month format](COMMUNITY_INITIATIVES.md#c-builder-of-the-month) and the [monthly recognition archive](BUILDERS_OF_THE_MONTH.md).
 
 ### Open-source contribution month
 
@@ -168,7 +168,7 @@ Before publishing an activity:
 - **Challenge 001** is available in the [challenge system](../challenges/README.md).
 - **Weekly and monthly formats** are ready to reuse, but they run only when hosted.
 - **No live event, hackathon, or spotlight** is currently guaranteed. Check the linked categories for the latest posts.
-- **Recognition drafts are prepared but not published.** See the [recognition discussion drafts](discussions/recognition/README.md).
+- **Recognition drafts are prepared but not published.** See the [recognition discussion drafts](discussions/recognition/README.md) and the [campaign launch kit](launch/README.md).
 
 ## Templates
 
@@ -178,6 +178,7 @@ Before publishing an activity:
 - [Collaboration request](templates/COLLABORATION_REQUEST.md)
 - [Code review request](templates/CODE_REVIEW_REQUEST.md)
 - [Project showcase](templates/PROJECT_SHOWCASE.md)
+- [Project review](templates/PROJECT_REVIEW_TEMPLATE.md)
 - [Project discovery submission](templates/PROJECT_DISCOVERY_SUBMISSION.md)
 - [Resource submission](templates/RESOURCE_SUBMISSION.md)
 - [Developer Spotlight interview](templates/DEVELOPER_SPOTLIGHT_TEMPLATE.md)
@@ -186,4 +187,4 @@ Before publishing an activity:
 
 ---
 
-**Related:** [Discussion Guide](DISCUSSION_GUIDE.md) · [Collaboration Guide](COLLABORATION_GUIDE.md) · [Open-Source Guide](OPEN_SOURCE_GUIDE.md) · [Developer Spotlight](DEVELOPER_SPOTLIGHT.md) · [Community Initiatives](COMMUNITY_INITIATIVES.md) · [Project Discovery](PROJECT_DISCOVERY.md) · [Community Roadmap](COMMUNITY_ROADMAP.md)
+**Related:** [Discussion Guide](DISCUSSION_GUIDE.md) · [Collaboration Guide](COLLABORATION_GUIDE.md) · [Open-Source Guide](OPEN_SOURCE_GUIDE.md) · [Developer Spotlight](DEVELOPER_SPOTLIGHT.md) · [Community Initiatives](COMMUNITY_INITIATIVES.md) · [Builders of the Month](BUILDERS_OF_THE_MONTH.md) · [Project Discovery](PROJECT_DISCOVERY.md) · [Community Roadmap](COMMUNITY_ROADMAP.md)
