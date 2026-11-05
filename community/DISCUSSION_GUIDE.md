@@ -59,6 +59,8 @@ Ask yourself:
 
 If a post belongs somewhere else, a moderator may move it and leave a short note. This keeps the community navigable.
 
+**Recognition programs:** Developer Spotlight and Builder of the Month nominations go in **General Discussion**. Published profiles and recognition posts go in **Announcements**. Project Review Friday submissions go in **Project Showcase**. Do not create a separate Spotlight category; the program uses the existing 12-category structure. See the [recognition publishing guide](discussions/recognition/README.md).
+
 ## 4. Writing a strong discussion
 
 ### Title

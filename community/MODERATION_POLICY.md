@@ -56,6 +56,7 @@ The following may be removed or restricted:
 - Pyramid schemes, investment scams, or "guaranteed income" offers.
 - Bulk unsolicited messages to members.
 - Low-effort AI-generated content posted repeatedly.
+- Fake spotlight nominations, purchased recognition, or impersonating a nominee.
 
 ### Integrity and intellectual property
 

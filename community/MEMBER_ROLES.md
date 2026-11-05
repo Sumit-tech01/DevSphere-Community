@@ -116,7 +116,7 @@ Contributors are members who have improved DevSphere through accepted work.
 
 ### Recognition
 
-Contributors may be acknowledged in release notes, the changelog, or a community spotlight. Recognition is based on actual contributions, never purchased or fabricated.
+Contributors may be acknowledged in release notes, the changelog, or a [Developer Spotlight](DEVELOPER_SPOTLIGHT.md). Recognition is based on actual contributions, never purchased or fabricated, and is published only with the contributor's permission.
 
 A contributor is not automatically a maintainer. Maintainership is a separate trust decision.
 
@@ -152,6 +152,7 @@ As the community grows, these optional roles may be introduced:
 | --- | --- |
 | **Challenge reviewer** | Reviews challenge submissions and provides constructive feedback |
 | **Resource curator** | Maintains a learning collection and verifies official links |
+| **Recognition reviewer** | Reviews Spotlight and Builder of the Month nominations, checks evidence, and recuses from conflicts of interest |
 | **Welcome host** | Greets new members and helps them find the right category |
 | **Working group lead** | Coordinates a time-bound project or program |
 | **Translator** | Adapts key community documents for other languages |
@@ -195,4 +196,4 @@ DevSphere is voluntary. Every thoughtful answer, review, resource, and welcome m
 
 ---
 
-**Related documents:** [Code of Conduct](../CODE_OF_CONDUCT.md) · [Community Guidelines](COMMUNITY_GUIDELINES.md) · [Moderation Policy](MODERATION_POLICY.md) · [Community Roadmap](COMMUNITY_ROADMAP.md)
+**Related documents:** [Code of Conduct](../CODE_OF_CONDUCT.md) · [Community Guidelines](COMMUNITY_GUIDELINES.md) · [Moderation Policy](MODERATION_POLICY.md) · [Community Roadmap](COMMUNITY_ROADMAP.md) · [Developer Spotlight](DEVELOPER_SPOTLIGHT.md) · [Community Initiatives](COMMUNITY_INITIATIVES.md)

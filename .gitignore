@@ -47,6 +47,9 @@ env/
 *.key
 *.p12
 
+# Private outreach drafts (names, contact details, replies, consent records)
+community/outreach/invitations/
+
 # Build output and caches
 dist/
 build/

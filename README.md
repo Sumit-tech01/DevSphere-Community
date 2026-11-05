@@ -8,219 +8,494 @@
 
 <p align="center">
   <strong>Connect. Code. Collaborate. Create.</strong><br>
-  A global developer community for learning, building, and growing together.
+  A free, GitHub-native community for developers who learn by building together.
 </p>
 
 <p align="center">
   <a href="https://github.com/Sumit-tech01/DevSphere-Community/discussions">
     <img src="https://img.shields.io/badge/Discussions-Join%20the%20conversation-2563EB?style=flat-square&logo=github&logoColor=white" alt="Join DevSphere Discussions">
   </a>
+  <a href="resources/README.md">
+    <img src="https://img.shields.io/badge/Resources-Curated-22D3EE?style=flat-square" alt="Curated developer resources">
+  </a>
+  <a href="resources/learning-roadmaps.md">
+    <img src="https://img.shields.io/badge/Roadmaps-10%20paths-8B5CF6?style=flat-square" alt="Ten learning roadmaps">
+  </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-22D3EE?style=flat-square" alt="MIT License">
+    <img src="https://img.shields.io/badge/License-MIT-0B1020?style=flat-square" alt="MIT License">
   </a>
   <a href="CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-Welcome-8B5CF6?style=flat-square" alt="Pull requests welcome">
-  </a>
-  <a href="community/COMMUNITY_ROADMAP.md">
-    <img src="https://img.shields.io/badge/Roadmap-Open-0B1020?style=flat-square" alt="Community roadmap">
+    <img src="https://img.shields.io/badge/PRs-Welcome-0EA5E9?style=flat-square" alt="Pull requests welcome">
   </a>
 </p>
 
 <p align="center">
-  <a href="#about-devsphere">About</a> ·
-  <a href="#mission-and-vision">Mission</a> ·
-  <a href="#what-we-explore">Explore</a> ·
-  <a href="#join-devsphere">Join</a> ·
-  <a href="#participate">Participate</a> ·
-  <a href="#contribute">Contribute</a> ·
-  <a href="#community-guidelines">Guidelines</a> ·
-  <a href="#founder">Founder</a>
+  <a href="#community-introduction">Introduction</a> ·
+  <a href="#join-the-community">Join</a> ·
+  <a href="#developer-resource-hub">Resources</a> ·
+  <a href="#learning-roadmaps">Roadmaps</a> ·
+  <a href="#project-showcase">Showcase</a> ·
+  <a href="#developer-spotlight">Spotlight</a> ·
+  <a href="#community-discussions">Discussions</a> ·
+  <a href="#contribution-guidelines">Contribute</a>
+</p>
+
+<p align="center">
+  <strong><a href="https://github.com/Sumit-tech01/DevSphere-Community/discussions">Join the community →</a></strong>
 </p>
 
 ---
 
-## About DevSphere
+## Community Introduction
 
-**DevSphere** is a global, GitHub-native developer community where people who build with technology can learn from one another, discuss ideas, share projects, and create opportunities.
+DevSphere is a free community for developers at every stage: people writing their first program, people changing roles, and people maintaining projects used by others. It is built on GitHub Discussions, where conversations stay searchable and contributions stay connected to the work.
 
-The community is designed for developers at every stage: students writing their first program, engineers growing their craft, AI and machine learning enthusiasts, web and app developers, open-source contributors, freelancers, startup founders, and technology enthusiasts who simply enjoy building.
+The community launched in **November 2026** and is being built in public. There are no paid memberships, no hidden sign-up funnel, and no claims of partnerships, funding, or achievements that cannot be verified. The goal is simpler: make useful learning paths, honest resources, and real collaboration easier to find.
 
-DevSphere lives on GitHub. **[GitHub Discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions)** is the central place for conversation, questions, project feedback, collaboration, and community announcements. There is no paid membership, no private platform, and no barrier to entry — only a free GitHub account and a genuine interest in technology.
-
-> **Learn together. Build together. Grow together.**
-
-## Mission and Vision
-
-### Mission
-
-To build an inclusive global ecosystem where developers can learn, collaborate, share opportunities, solve meaningful problems, and create technology that matters.
-
-### Vision
-
-A world where geography, experience level, and background are not barriers to learning and building — where any developer can find knowledge, feedback, collaborators, and a community that wants them to succeed.
-
-### Community objectives
-
-- **Make learning accessible.** Curate free, high-quality resources and encourage knowledge sharing.
-- **Strengthen technical discussion.** Create space for thoughtful conversations about programming, AI, the web, mobile, and open source.
-- **Help projects find people.** Connect builders with collaborators, reviewers, and early users.
-- **Create practice opportunities.** Run coding challenges, hackathon discussions, and project-based learning.
-- **Support career growth.** Share internships, jobs, learning paths, and practical career advice.
-- **Grow open-source participation.** Help members make their first contribution and become confident maintainers.
-- **Keep the community safe and welcoming.** Apply clear guidelines, fair moderation, and a culture of respect.
-- **Build in public.** Document decisions, share the roadmap, and invite the community to shape what comes next.
-
-## What We Explore
-
-| Area | What the community discusses |
+| What you can do here | Where it happens |
 | --- | --- |
-| **Programming** | Python, JavaScript, TypeScript, C++, Java, algorithms, data structures, and software design |
-| **AI & Machine Learning** | Machine learning, deep learning, LLMs, generative AI, model evaluation, and responsible AI |
-| **Web Development** | HTML, CSS, React, Next.js, Node.js, APIs, accessibility, and performance |
-| **App Development** | Android, iOS, Flutter, React Native, and cross-platform product development |
-| **Project Showcase** | Projects, experiments, portfolios, demos, and constructive peer feedback |
-| **Questions & Help** | Debugging, architecture questions, code review, and learning support |
-| **Hackathons & Challenges** | Competitions, coding challenges, team formation, and submission stories |
-| **Collaboration** | Finding co-founders, teammates, reviewers, and open-source collaborators |
-| **Career & Opportunities** | Internships, jobs, fellowships, scholarships, and career guidance |
-| **Open Source** | First contributions, maintainership, licensing, documentation, and community building |
-| **Cloud & DevOps** | Linux, Docker, CI/CD, cloud fundamentals, and deployment practices |
-| **Developer Experience** | Tooling, productivity, technical writing, design, and building in public |
+| Follow a structured learning path | [Learning Roadmaps](#learning-roadmaps) |
+| Use curated, reviewed resources | [Developer Resource Hub](#developer-resource-hub) |
+| Ask a technical question | [Questions & Help](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/questions-help) |
+| Share a project and get feedback | [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) |
+| Find collaborators | [Collaboration](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration) |
+| Practice open source | [Open-Source Hub](#open-source-hub) |
+| Prepare for opportunities | [Career & Opportunities](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/career-opportunities) |
 
-## Community Principles
+**What DevSphere is:** a learning and collaboration hub maintained in public, with free resources, templates, and community discussions.
 
-1. **Respect people first.** Disagree with ideas, never attack people.
-2. **Be useful and constructive.** Offer context, examples, and next steps.
-3. **Welcome beginners.** Every expert was once a beginner; questions are not weaknesses.
-4. **Share original work and credit others.** Cite sources, respect licenses, and never plagiarize.
-5. **Protect privacy and security.** Never post credentials, private data, or someone else's personal information.
-6. **Keep it relevant.** No spam, unsolicited promotion, or repetitive self-advertising.
-7. **Assume good intent and ask before assuming.** Clarify, listen, and give people room to grow.
-8. **Leave the community better than you found it.** Report problems, improve documentation, and help others.
+**What it is not:** a bootcamp, a job guarantee, a paid course, a recruiting agency, or a replacement for official documentation. Read the [Community Guidelines](community/COMMUNITY_GUIDELINES.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
 
-Read the full **[Community Guidelines](community/COMMUNITY_GUIDELINES.md)** and **[Code of Conduct](CODE_OF_CONDUCT.md)**.
+---
+
+## Join the Community
+
+There is no separate registration form. Participation happens in GitHub Discussions, and your GitHub account is your community identity.
+
+1. **Open [DevSphere Discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions).**
+2. **Introduce yourself** in [Introductions](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/introductions). Share what you are learning and what you want to build.
+3. **Choose one category** from the [category map](#community-discussions) and read a few threads before posting.
+4. **Make one useful move:** ask a specific question, answer someone, share a project, or review a resource.
+
+> **New here?** Start with the [Discussion Guide](community/DISCUSSION_GUIDE.md) for posting etiquette, category guidance, and a first-week checklist.
+
+The community is free to participate in. Be respectful, avoid spam and self-promotion, and never share credentials or private data.
+
+---
+
+## Why Join DevSphere?
+
+| Reason | What it looks like |
+| --- | --- |
+| **Learn with structure** | Ten role-based roadmaps with concepts, official resources, projects, and milestones |
+| **Use resources you can trust** | Curated collections with official links, honest status labels, and no affiliate placements |
+| **Build in public** | Showcase projects, document trade-offs, and get specific feedback |
+| **Find collaborators** | Propose projects, request a teammate, or ask for a focused code review |
+| **Practice open source** | Learn the contribution workflow with templates and community support |
+| **Prepare for opportunities** | Explore portfolios, resumes, interviews, and verified external programs without hype |
+| **Grow with the community** | Help shape resources, activities, and discussions as the community develops |
+
+DevSphere does not promise jobs, internships, funding, followers, or viral reach. It offers a place to do the work, ask better questions, and meet people who care about the craft.
+
+---
+
+## Developer Resource Hub
+
+The collections are free to browse, and every entry points to official documentation, recognized open-source projects, or stable educational references. Paid resources are labeled only when they are relevant, and they are never required for the free path.
+
+| Collection | Best for | What is inside |
+| --- | --- | --- |
+| [Learning Roadmaps](resources/learning-roadmaps.md) | Choosing a direction | Ten role-based paths with projects and milestones |
+| [Programming](resources/programming.md) | Learning languages and fundamentals | Python, JavaScript, TypeScript, Go, Rust, C++, Java, computer science |
+| [Web Development](resources/web-development.md) | Building for the web | HTML, CSS, React, Next.js, Node.js, databases, APIs, accessibility |
+| [App Development](resources/app-development.md) | Building mobile apps | Android, iOS, Flutter, React Native, Expo, testing, release |
+| [AI & Machine Learning](resources/artificial-intelligence.md) | Understanding and building AI systems | ML foundations, deep learning, LLMs, AI applications, evaluation, responsible AI |
+| [Developer Tools & APIs](resources/developer-tools.md) | Working efficiently | Git, GitHub, VS Code, Docker, Postman, Figma, Linux, cloud, API design |
+| [Open Source](resources/open-source.md) | Contributing to projects | Git, GitHub, licensing, first contributions, maintainability, security |
+| [Career Development](resources/career-development.md) | Presenting your work | Portfolios, resumes, interviews, DSA, internships, job-search safety |
+
+<details>
+<summary><strong>Featured free starting points</strong></summary>
+
+| Resource | Best for | Level |
+| --- | --- | --- |
+| [MDN — Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) | HTML, CSS, JavaScript, and the web platform | Beginner |
+| [The Python Tutorial](https://docs.python.org/3/tutorial/) | Python fundamentals from the official source | Beginner |
+| [React — Learn](https://react.dev/learn) | Components, state, and modern React | Beginner–Intermediate |
+| [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html) | Relational databases and SQL | Beginner |
+| [Google — Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) | Practical ML foundations | Beginner |
+| [Hugging Face — Learn](https://huggingface.co/learn) | LLMs, agents, and modern AI | Beginner–Intermediate |
+| [Pro Git](https://git-scm.com/book/en/v2) | Version control from the ground up | Beginner–Advanced |
+| [Docker — Get Started](https://docs.docker.com/get-started/) | Containers and reproducible environments | Beginner |
+
+</details>
+
+**Status labels in the collection:** `Free`, `Free + paid`, `Paid`, `Docs free; usage billed`, and `Free student resources`. DevSphere does not sell listings or accept affiliate links. If a link is broken or a status is wrong, use the [resource submission process](community/RESOURCE_SUBMISSION.md).
+
+---
+
+## Learning Roadmaps
+
+The roadmaps are sequences, not schedules. Move on when you can explain and apply a concept, build the suggested projects, and gather evidence of your progress. No roadmap guarantees employment or a specific salary.
+
+| Roadmap | Focus | Start |
+| --- | --- | --- |
+| **Frontend Developer** | Accessible, responsive interfaces | [Open roadmap](resources/learning-roadmaps.md#frontend-developer) |
+| **Backend Developer** | APIs, data, security, reliability | [Open roadmap](resources/learning-roadmaps.md#backend-developer) |
+| **Full-Stack Developer** | End-to-end product delivery | [Open roadmap](resources/learning-roadmaps.md#full-stack-developer) |
+| **AI Engineer** | LLM applications, retrieval, evaluation | [Open roadmap](resources/learning-roadmaps.md#ai-engineer) |
+| **ML Engineer** | Training, deploying, and operating models | [Open roadmap](resources/learning-roadmaps.md#machine-learning-engineer) |
+| **Data Scientist** | Statistics, analysis, experiments, communication | [Open roadmap](resources/learning-roadmaps.md#data-scientist) |
+| **Python Developer** | Readable, tested Python for real tools | [Open roadmap](resources/learning-roadmaps.md#python-developer) |
+| **Mobile App Developer** | Android, iOS, Flutter, React Native | [Open roadmap](resources/learning-roadmaps.md#mobile-app-developer) |
+| **DevOps Engineer** | Linux, containers, CI/CD, cloud, operations | [Open roadmap](resources/learning-roadmaps.md#devops-engineer) |
+| **Open-Source Contributor** | Useful contributions and maintainership | [Open roadmap](resources/learning-roadmaps.md#open-source-contributor) |
+
+Each roadmap includes a learning sequence, core concepts, official resources, project ideas, milestones, and a link to the matching discussion category. Use the [full roadmap guide](resources/learning-roadmaps.md) to compare paths or choose between similar roles.
+
+---
+
+## AI & Machine Learning Hub
+
+Start with foundations, then move toward the part of AI you actually want to build: classical ML, deep learning, LLM applications, evaluation, or responsible deployment.
+
+| Resource | Use it for | Level |
+| --- | --- | --- |
+| [Google — Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) | Practical ML foundations with exercises | Beginner |
+| [Microsoft — AI for Beginners](https://github.com/microsoft/AI-For-Beginners) | A broad, structured AI curriculum | Beginner |
+| [Hugging Face — Learn](https://huggingface.co/learn) | LLMs, agents, diffusion, and hands-on courses | Beginner–Intermediate |
+| [PyTorch — Learn the Basics](https://docs.pytorch.org/tutorials/beginner/basics/intro.html) | Tensors, autograd, and training loops | Beginner |
+| [OpenAI — API Documentation](https://developers.openai.com/api/docs) | Building with model APIs and structured outputs | Intermediate |
+| [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | Risk, governance, and responsible deployment | Intermediate |
+
+**Build sequence:** Python and data → ML foundations → one domain (NLP, vision, or tabular) → evaluation → retrieval and tools → deployment, cost, and safety. The [AI Engineer roadmap](resources/learning-roadmaps.md#ai-engineer) turns that into projects and milestones.
+
+Explore the full [AI & Machine Learning collection](resources/artificial-intelligence.md), including AI application development, evaluation, research, and responsible AI. Discuss it in [AI & Machine Learning](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/ai-machine-learning).
+
+---
+
+## Web & App Development
+
+### Web development
+
+| Resource | Use it for |
+| --- | --- |
+| [MDN — Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) | The web platform, from HTML to APIs |
+| [React — Learn](https://react.dev/learn) | Components, state, and modern React |
+| [Next.js — Learn](https://nextjs.org/learn) | Routing, rendering, data fetching, and deployment |
+| [Node.js — Learn](https://nodejs.org/learn) | Server-side JavaScript and APIs |
+| [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html) | Relational data and SQL |
+| [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) | Contract-first API design |
+
+Follow the [Frontend](resources/learning-roadmaps.md#frontend-developer), [Backend](resources/learning-roadmaps.md#backend-developer), or [Full-Stack](resources/learning-roadmaps.md#full-stack-developer) roadmap. Ask in [Web Development](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/web-development) and use the [web collection](resources/web-development.md) for the full list.
+
+### App development
+
+| Resource | Use it for |
+| --- | --- |
+| [Flutter Documentation](https://docs.flutter.dev/) | Cross-platform apps with Dart |
+| [React Native Documentation](https://reactnative.dev/docs/getting-started) | Native mobile apps with React |
+| [Expo Documentation](https://docs.expo.dev/) | A managed React Native workflow |
+| [Android Get Started](https://developer.android.com/get-started) | Native Android with Kotlin and Compose |
+| [SwiftUI Tutorials](https://developer.apple.com/tutorials/swiftui) | Native Apple interfaces |
+| [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) | Platform interaction and visual guidance |
+
+Follow the [Mobile App Developer roadmap](resources/learning-roadmaps.md#mobile-app-developer), use the [app collection](resources/app-development.md), and ask in [App Development](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/app-development).
+
+**Choose one path and finish one small app.** The goal is a working, tested, documented product — not five unfinished starters.
+
+---
+
+## Developer Tools & APIs
+
+| Tool | Use it for | Start here |
+| --- | --- | --- |
+| **Git** | Version control and safe branching | [Pro Git](https://git-scm.com/book/en/v2) |
+| **GitHub** | Repositories, reviews, issues, and automation | [GitHub documentation](https://docs.github.com/en) |
+| **VS Code** | Editing, debugging, and extensions | [VS Code documentation](https://code.visualstudio.com/docs) |
+| **Docker** | Reproducible containers and local services | [Docker — Get started](https://docs.docker.com/get-started/) |
+| **Postman** | Exploring and testing HTTP APIs | [Postman learning center](https://learning.postman.com/docs/getting-started/overview/) |
+| **Figma** | Interface design and collaboration | [Figma help center](https://help.figma.com/hc/en-us) |
+| **Linux** | Shell, servers, and automation | [The Missing Semester](https://missing.csail.mit.edu/) |
+| **OpenAPI** | Describing APIs as a contract | [OpenAPI specification](https://spec.openapis.org/oas/latest.html) |
+
+The [Developer Tools & APIs collection](resources/developer-tools.md) covers Git, editors, containers, API testing, design, Linux, cloud platforms, and open-source utilities. Cloud documentation is free; creating cloud resources may cost money. Always check current pricing and billing before deploying.
+
+Ask tooling questions in [Programming](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/programming). Never post tokens, private keys, or cloud credentials.
+
+---
+
+## Open-Source Hub
+
+Open source is a collaboration model, not free labor. Start small, read the project's rules, and communicate before making a large change.
+
+1. **Learn the Git workflow.** Fork, clone, branch, commit, and push.
+2. **Choose a project you use.** Read its README, contribution guide, license, and code of conduct.
+3. **Find a bounded issue.** Documentation, tests, and reproducible bugs are good first contributions.
+4. **Confirm the approach.** Comment on the issue before significant work.
+5. **Open a focused pull request.** Explain the problem, the change, and how you verified it.
+6. **Respond to review with evidence and patience.** A pull request is a proposal, not a guarantee of merge.
+
+| Resource | Why it helps |
+| --- | --- |
+| [DevSphere Open-Source Guide](community/OPEN_SOURCE_GUIDE.md) | The full workflow, communication, and review path |
+| [Open Source Resources](resources/open-source.md) | Curated Git, licensing, security, and maintainership links |
+| [First Contributions](https://firstcontributions.github.io/) | Practice the fork and pull request workflow |
+| [Good First Issue](https://goodfirstissue.dev/) | Find beginner-friendly issues |
+| [Open Source Guides — How to Contribute](https://opensource.guide/how-to-contribute/) | A complete contribution guide |
+| [GitHub Skills](https://skills.github.com/) | Interactive GitHub practice |
+
+<details>
+<summary><strong>First-contribution checklist</strong></summary>
+
+- [ ] I read the contribution guide and code of conduct.
+- [ ] I confirmed the issue is open and the approach is welcome.
+- [ ] I created a focused branch.
+- [ ] I made one coherent change.
+- [ ] I added or updated tests and documentation.
+- [ ] I ran the project's checks.
+- [ ] I opened a clear pull request and can respond to review.
+- [ ] I credited others and respected the license.
+
+</details>
+
+Find projects and collaborators in [Collaboration](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration). Maintainers are often volunteers; do not pressure them for reviews, merges, or employment.
+
+---
+
+## Project Showcase
+
+The [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) is for work you built and can explain. The [showcase discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/3) is a good place to see how it works.
+
+A useful showcase includes:
+
+- What the project does and who it helps.
+- A working demo or repository link.
+- The stack, architecture, and one difficult trade-off.
+- What you want feedback on.
+- Known limitations and the next milestone.
+- Credit for collaborators and third-party assets.
+
+Use the [project showcase template](community/templates/PROJECT_SHOWCASE.md). Do not post only a link, invent traction, hide a paid promotion, or share someone else's work without permission.
+
+**Challenge submissions** also belong in Project Showcase. Include the challenge name and a short reflection on what you learned.
+
+---
+
+## Find Collaborators
+
+Use [Collaboration](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration) to propose a project, find a teammate, request help, or ask for a code review. The [Collaboration Guide](community/COLLABORATION_GUIDE.md) explains the full process.
+
+Every collaboration post must state its model:
+
+| Model | What must be explicit |
+| --- | --- |
+| **Paid** | Scope, rate or budget, currency, payment schedule, and relationship |
+| **Unpaid / voluntary** | That it is unpaid, the time expected, credit, and license |
+| **Open source** | License, contribution process, review expectations, and credit |
+| **Equity or revenue share** | Written terms, decision rights, and what happens if the project stops |
+| **Hackathon team** | Event rules, roles, submission ownership, and deadlines |
+
+Use the [project proposal](community/templates/PROJECT_PROPOSAL.md), [find a teammate](community/templates/FIND_A_TEAMMATE.md), [collaboration request](community/templates/COLLABORATION_REQUEST.md), and [code review request](community/templates/CODE_REVIEW_REQUEST.md) templates.
+
+**Safety:** never pay to apply for a role, never share credentials or identity documents in a public thread, and verify official sources. Use [Career & Opportunities](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/career-opportunities) for paid roles and jobs.
+
+---
+
+## Weekly Coding Challenges
+
+Challenges are practical, free, and open to everyone. Each one includes a problem statement, requirements, bonus goals, a rubric, and submission guidance. The goal is to finish something, explain your decisions, and learn from other approaches.
+
+**Current challenge:** [Challenge 001 — Responsive Developer Profile Card](challenges/challenge-001.md)
+
+How it works:
+
+1. Read the [challenge brief](challenges/challenge-001.md) and the [challenge system](challenges/README.md).
+2. Build the project in your own repository.
+3. Check the rubric and write a short reflection.
+4. Share the result in [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) with the challenge tag.
+
+Browse [Hackathons & Challenges](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/hackathons-challenges), or propose a challenge using the [challenge template](challenges/CHALLENGE_TEMPLATE.md). New challenges are published when they are prepared; there is no artificial weekly deadline or leaderboard.
+
+---
+
+## Hackathons & Opportunities
+
+Hackathons, internships, jobs, and open-source programs can be shared in the community, but they must be honest and verifiable. **DevSphere does not currently host its own hackathon.** External opportunities are posted by members and are not automatically endorsed by DevSphere.
+
+Use [Hackathons & Challenges](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/hackathons-challenges) for time-bound events and [Career & Opportunities](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/career-opportunities) for roles.
+
+A useful opportunity post includes:
+
+| Field | Why it matters |
+| --- | --- |
+| Official link | Lets people verify the opportunity |
+| Organization or event | Identifies who is responsible |
+| Dates and deadline | Prevents wasted effort |
+| Eligibility and location | Avoids misleading a global audience |
+| Cost | Discloses fees, travel, or equipment requirements |
+| Paid, unpaid, or voluntary | Prevents exploitation and ambiguity |
+| Application process | Explains the next step clearly |
+
+Do not post application fees, "guaranteed" jobs, recruiters hiding their identity, or requests for bank details and identity documents. Read the [career collection](resources/career-development.md) and the [Collaboration Guide](community/COLLABORATION_GUIDE.md) before sharing an opportunity.
+
+---
+
+## Community Events
+
+**No live DevSphere event is currently scheduled.** The community runs on asynchronous Discussions, with activities added when a host is available and the format is useful.
+
+Planned formats include:
+
+| Format | What it looks like |
+| --- | --- |
+| **Weekly learning goals** | Share a skill goal and one small next action |
+| **Technical deep dive** | Discuss a design decision, debugging lesson, or concept |
+| **Open-source Friday** | Find an issue, ask for help, or share a contribution |
+| **Project showcase** | Present work and request specific feedback |
+| **Monthly build sprint** | Finish a small milestone with public updates |
+| **Knowledge-sharing session** | A written explainer, workshop, or walkthrough |
+
+Read [Community Activities](community/COMMUNITY_ACTIVITIES.md) and the [activity templates](community/templates/ACTIVITY_TEMPLATES.md). To propose an event, post in [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion) with the topic, format, time in UTC, accessibility needs, and whether it is free. DevSphere-hosted community events are free to attend.
+
+---
+
+<a name="developer-spotlight"></a>
+
+## 🌟 Developer Spotlight
+
+<p align="center">
+  <strong>Great work deserves to be seen. Great help deserves to be named.</strong><br>
+  A consent-first recognition program for the people who build, learn, review, document, and help others in DevSphere.
+</p>
+
+The [Developer Spotlight](community/DEVELOPER_SPOTLIGHT.md) is a community thank-you, not a ranking, certification, prize, job offer, funding offer, or paid placement. It recognizes useful projects and generous contributions with a written profile built on verifiable evidence and explicit permission.
+
+> **No spotlights are published yet.** DevSphere does not invent members, projects, achievements, testimonials, or winners. The weekly slot is an operating rhythm, not a quota: a week with no consented, verified profile is a normal week.
+
+### The recognition ecosystem
+
+| Initiative | Rhythm | What it does |
+| --- | --- | --- |
+| **Developer Spotlight** | Weekly slot | Features a developer and a project with consent |
+| **[Project Review Friday](community/COMMUNITY_INITIATIVES.md#b-project-review-friday)** | Weekly | Gives specific, constructive feedback on community projects |
+| **[Builder of the Month](community/COMMUNITY_INITIATIVES.md#c-builder-of-the-month)** | Monthly | Recognizes contribution, learning progress, and project development |
+| **[Community Collaboration](community/COMMUNITY_INITIATIVES.md#d-community-collaboration)** | Ongoing | Helps members find collaborators and build together |
+
+### Recognition categories
+
+| Category | What it recognizes |
+| --- | --- |
+| **Outstanding Project** | Clear purpose, thoughtful execution, and honest documentation |
+| **Helpful Contributor** | Specific, consistent help to other members |
+| **Innovative AI Project** | Responsible AI work with evaluation and limitations |
+| **Open-Source Contribution** | A meaningful, verified contribution to an open-source project |
+| **Community Helper** | Onboarding, moderation, curation, or event support |
+
+Stars, followers, commit counts, seniority, and posting volume are not selection criteria. A small documentation fix or a patient answer to a beginner can be strong evidence.
+
+### How it works
+
+1. **Nominate.** Nominate yourself or another developer with their permission in [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion).
+2. **Review.** A small review group checks the evidence against the [published criteria](community/DEVELOPER_SPOTLIGHT.md#recognition-criteria). Reviewers with a conflict of interest recuse themselves.
+3. **Invite.** Shortlisted developers receive a private invitation. They can accept, ask questions, or decline without pressure.
+4. **Interview.** The developer completes a written interview and can skip any optional question.
+5. **Approve.** The developer reviews the final draft for factual accuracy before publication.
+6. **Publish.** Approved profiles appear in [Announcements](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/announcements) and are indexed in the handbook.
+
+### Nominate a developer
+
+- **Read the handbook:** [Developer Spotlight framework](community/DEVELOPER_SPOTLIGHT.md)
+- **Use the nomination form:** [Developer nomination template](community/templates/DEVELOPER_NOMINATION_TEMPLATE.md)
+- **Prepare for an interview:** [Developer Spotlight template](community/templates/DEVELOPER_SPOTLIGHT_TEMPLATE.md)
+- **Submit the nomination:** [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion)
+- **See published profiles:** [Announcements](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/announcements)
+
+### Participation guidelines
+
+- **Ask first.** Never nominate or publish another person's name, project, story, or quote without their permission.
+- **Be specific.** Name the behavior, project, or outcome that earned recognition.
+- **Show evidence.** Provide working links and separate verifiable facts from estimates.
+- **Respect privacy.** Do not post private contact information, identity documents, customer data, or private messages.
+- **Disclose conflicts.** Say if you are the nominee, a collaborator, an employee, an investor, or an affiliate.
+- **Do not rank people.** A spotlight is not a leaderboard and does not imply that another member is less valuable.
+- **Allow correction and removal.** Anyone can ask for a correction or removal at any time.
+- **No paid placement.** Recognition cannot be bought, and DevSphere does not promise awards, prizes, employment, or financial benefits.
+
+**Discover projects and resources:** read the [Project and Resource Discovery framework](community/PROJECT_DISCOVERY.md), then share work in [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase).
+
+---
 
 ## Community Discussions
 
-[GitHub Discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions) is the heart of DevSphere. Every member can start a conversation, ask a question, share a project, or help someone else.
+GitHub Discussions is the central meeting place. Choose the category that matches your intent, and read the [Discussion Guide](community/DISCUSSION_GUIDE.md) before posting.
 
-| Category | Purpose | Format |
-| --- | --- | --- |
-| **Announcements** | Official updates from the DevSphere team | Announcement |
-| **Introductions** | Meet other members and share your journey | Open-ended |
-| **General Discussion** | Community conversations and technology topics | Open-ended |
-| **Programming** | Languages, algorithms, architecture, and engineering practice | Open-ended |
-| **AI & Machine Learning** | AI research, models, tools, and responsible AI | Open-ended |
-| **Web Development** | Frontend, backend, accessibility, and performance | Open-ended |
-| **App Development** | Mobile and cross-platform development | Open-ended |
-| **Project Showcase** | Share what you are building and get feedback | Open-ended |
-| **Questions & Help** | Ask a technical question and mark the best answer | Q&A |
-| **Hackathons & Challenges** | Events, coding challenges, and team formation | Open-ended |
-| **Collaboration** | Find teammates, reviewers, and co-builders | Open-ended |
-| **Career & Opportunities** | Jobs, internships, scholarships, and career advice | Open-ended |
+| Category | Use it for |
+| --- | --- |
+| [Announcements](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/announcements) | Community updates and official notices |
+| [Introductions](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/introductions) | Introduce yourself and your goals |
+| [General Discussion](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion) | Ideas, feedback, and open conversation |
+| [Programming](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/programming) | Languages, tooling, architecture, and debugging |
+| [AI & Machine Learning](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/ai-machine-learning) | ML, LLMs, evaluation, and responsible AI |
+| [Web Development](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/web-development) | Frontend, backend, APIs, and databases |
+| [App Development](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/app-development) | Android, iOS, Flutter, React Native, and Expo |
+| [Project Showcase](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) | Share projects and request feedback |
+| [Questions & Help](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/questions-help) | Specific questions that need an answer |
+| [Hackathons & Challenges](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/hackathons-challenges) | Challenges, hackathons, and time-bound events |
+| [Collaboration](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration) | Projects, teammates, reviews, and open-source help |
+| [Career & Opportunities](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/career-opportunities) | Jobs, internships, and career questions |
 
-New to Discussions? Start with **[Introduce Yourself](https://github.com/Sumit-tech01/DevSphere-Community/discussions)** and read the **[Discussion Guide](community/DISCUSSION_GUIDE.md)**. Community administrators can follow the **[Discussions Setup Guide](community/DISCUSSION_SETUP.md)** to configure the full category structure.
+**Start here:** [Join the conversation](https://github.com/Sumit-tech01/DevSphere-Community/discussions) · [Introduce yourself](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/introductions) · [Ask a question](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/questions-help)
 
-> **Note:** The category structure above is the target configuration. GitHub does not allow categories to be created through repository files, so they must be created once in the repository's Discussions settings. Existing discussions are preserved and can be moved into the new categories.
+---
 
-## Join DevSphere
+## Contribution Guidelines
 
-Joining is free and takes less than five minutes.
-
-1. **Create or sign in to GitHub.** A free GitHub account is the only requirement.
-2. **Star and watch the repository.** Starring shows support; watching keeps you informed about announcements and releases.
-3. **Open Discussions.** Visit the [DevSphere Discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions) page.
-4. **Introduce yourself.** Share your background, interests, and what you want to learn or build.
-5. **Choose a category.** Follow the topics that match your interests and turn on notifications where useful.
-6. **Participate.** Ask a question, answer one, share a project, or join a challenge.
-
-There is no application form, membership fee, or approval process. Be respectful, curious, and willing to contribute.
-
-## Participate
-
-There are many ways to be part of DevSphere, whether you have five minutes or five hours.
-
-- **Ask a well-formed question.** Include what you tried, what happened, and what you expected.
-- **Answer someone else.** Even a small clarification can unblock another developer.
-- **Share a project.** Tell the community what you built, why it matters, and where you need feedback.
-- **Join a coding challenge.** Practice consistently and learn from other submissions.
-- **Find collaborators.** Post a clear collaboration request with scope, skills, and commitment.
-- **Share an opportunity.** Post internships, jobs, scholarships, or hackathons that are relevant and legitimate.
-- **Improve the community.** Suggest a resource, report a problem, or help shape the roadmap.
-- **Contribute to open source.** Start with documentation, tests, or a good first issue.
-
-A good contribution does not need to be large. It needs to be honest, useful, and kind.
-
-## Contribute
-
-DevSphere is maintained in public. Contributions to documentation, resources, templates, branding, and community programs are welcome.
-
-**Before you begin:**
-
-1. Read **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full workflow.
-2. Check existing [issues](https://github.com/Sumit-tech01/DevSphere-Community/issues) and pull requests to avoid duplicate work.
-3. Open an issue using the appropriate template if you are proposing a significant change.
-4. Fork the repository, create a focused branch, and make a small, clear change.
-5. Run the validation steps described in the contribution guide.
-6. Open a pull request and complete the pull request template.
-
-**Contribution paths**
+DevSphere is maintained in public. Contributions to documentation, resources, templates, code, moderation, and community programs are welcome.
 
 | Path | Good for |
 | --- | --- |
-| [Bug report](.github/ISSUE_TEMPLATE/bug_report.md) | Broken links, invalid markup, template errors |
-| [Feature request](.github/ISSUE_TEMPLATE/feature_request.md) | New resources, categories, or community programs |
-| [Project showcase](.github/ISSUE_TEMPLATE/project_showcase.md) | Sharing a project with the community |
-| [General contribution](.github/ISSUE_TEMPLATE/general_contribution.md) | Documentation, design, and other improvements |
-| [Coding challenges](challenges/README.md) | Practice projects and challenge submissions |
-| [Resources](resources/README.md) | Curated learning material and official documentation |
+| [Resource submission](community/RESOURCE_SUBMISSION.md) | Adding or correcting a learning resource |
+| [General contribution](.github/ISSUE_TEMPLATE/general_contribution.md) | Documentation, design, templates, and improvements |
+| [Bug report](.github/ISSUE_TEMPLATE/bug_report.md) | Broken links, invalid Markdown, or template errors |
+| [Feature request](.github/ISSUE_TEMPLATE/feature_request.md) | New collections, categories, or community programs |
+| [Coding challenges](challenges/README.md) | Challenge proposals and improvements |
+| [Open-source guide](community/OPEN_SOURCE_GUIDE.md) | Learning the contribution workflow |
+| [Community operations](community/GROWTH_STRATEGY.md) | Outreach, onboarding, and sustainable growth |
 
-All participants must follow the **[Code of Conduct](CODE_OF_CONDUCT.md)**. For security issues, follow **[SECURITY.md](SECURITY.md)** and never disclose a vulnerability publicly.
+Before you open a pull request:
 
-## Community Guidelines
+1. Read **[CONTRIBUTING.md](CONTRIBUTING.md)** and the **[Code of Conduct](CODE_OF_CONDUCT.md)**.
+2. Search existing issues and pull requests to avoid duplicate work.
+3. Open an issue for a significant change before writing a large patch.
+4. Fork the repository, create a focused branch, and keep the change small.
+5. Run the local checks.
+6. Open a pull request using the template and explain what changed and why.
 
-DevSphere is committed to a welcoming, inclusive, and professional environment. The short version:
+```bash
+python3 scripts/validate_repository.py
+python3 -m unittest discover -s scripts -p 'test_*.py'
+```
 
-- Be respectful and constructive.
-- No harassment, discrimination, hate speech, or personal attacks.
-- No spam, scams, credential harvesting, or unsolicited promotion.
-- No doxxing or sharing private information without consent.
-- Credit sources and respect licenses and intellectual property.
-- Keep discussions relevant and searchable.
-- Report concerns privately to the maintainers instead of escalating publicly.
+Do not commit secrets, private data, or generated files that the repository does not expect. For security issues, follow **[SECURITY.md](SECURITY.md)** and do not disclose the vulnerability publicly. For help, read **[SUPPORT.md](SUPPORT.md)**.
 
-**Full policies**
+<details>
+<summary><strong>Repository map</strong></summary>
 
-- **[Code of Conduct](CODE_OF_CONDUCT.md)** — expected behavior and enforcement.
-- **[Community Guidelines](community/COMMUNITY_GUIDELINES.md)** — posting, collaboration, and content rules.
-- **[Moderation Policy](community/MODERATION_POLICY.md)** — reporting, warnings, removal, and appeals.
-- **[Member Roles](community/MEMBER_ROLES.md)** — founder, maintainers, moderators, contributors, and members.
-- **[Security Policy](SECURITY.md)** — responsible disclosure.
-- **[Support Guide](SUPPORT.md)** — where to ask for help.
-
-## Resources
-
-Free, curated starting points for your learning journey. Every resource links to official documentation or a recognized community project.
-
-| Collection | Includes |
+| Path | What it contains |
 | --- | --- |
-| **[Programming](resources/programming.md)** | Python, JavaScript, TypeScript, C++, Java, and computer science foundations |
-| **[Web Development](resources/web-development.md)** | React, Next.js, Node.js, HTML, CSS, accessibility, and performance |
-| **[AI & Machine Learning](resources/artificial-intelligence.md)** | Machine learning, deep learning, generative AI, LLMs, and responsible AI |
-| **[Open Source](resources/open-source.md)** | Git, GitHub, licensing, first contributions, and maintainership |
-| **[Resource Index](resources/README.md)** | How to use the collection and suggest a new resource |
+| [`.github/`](.github/) | Issue templates, pull request template, and CI workflow |
+| [`assets/branding/`](assets/branding/) | Logo, banner, social preview, favicon, and brand guidelines |
+| [`community/`](community/) | Policies, recognition programs, discussion guides, collaboration, growth, discovery, and templates |
+| [`resources/`](resources/) | Curated resources and learning roadmaps |
+| [`challenges/`](challenges/) | Challenge system, template, and current challenge |
+| [`scripts/`](scripts/) | Validation and Discussions verification tooling |
 
-## Coding Challenges
+</details>
 
-DevSphere challenges are practical, beginner-friendly, and open to everyone. Each challenge includes a problem statement, requirements, bonus goals, submission instructions, evaluation criteria, and rules.
+The repository content is available under the [MIT License](LICENSE). The DevSphere name, logo, and brand assets are governed by the [Brand Guidelines](assets/branding/README.md).
 
-**Current challenge:** **[Challenge 001 — Build a Responsive Developer Profile Card](challenges/challenge-001.md)**
-
-- Browse the **[challenge system](challenges/README.md)**.
-- Use the **[challenge template](challenges/CHALLENGE_TEMPLATE.md)** to propose a future challenge.
-- Share your result in the **Project Showcase** discussion and tag it with `challenge-001`.
-
-Challenges are for learning. Feedback should be specific, kind, and focused on helping the builder improve.
+---
 
 ## Founder
 
@@ -238,52 +513,30 @@ Sumit founded DevSphere to create a welcoming, global space where developers can
 - Repository: [DevSphere-Community](https://github.com/Sumit-tech01/DevSphere-Community)
 - Contact: use GitHub Discussions for community questions, or the contact details on the founder's GitHub profile for private matters.
 
-## Getting Started
-
-A practical checklist for your first week:
-
-- [ ] Star and watch the repository.
-- [ ] Read the [Code of Conduct](CODE_OF_CONDUCT.md).
-- [ ] Introduce yourself in Discussions.
-- [ ] Follow the categories that match your interests.
-- [ ] Ask one question or answer one question.
-- [ ] Share a project or an idea in Project Showcase.
-- [ ] Try [Challenge 001](challenges/challenge-001.md).
-- [ ] Read the [Community Roadmap](community/COMMUNITY_ROADMAP.md) and suggest an improvement.
-- [ ] Make your first documentation contribution following [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Repository Guide
-
-| Path | What it contains |
-| --- | --- |
-| [`.github/`](.github/) | Issue templates, pull request template, and validation workflow |
-| [`assets/branding/`](assets/branding/) | Logo, banner, social preview, favicon, and brand guidelines |
-| [`community/`](community/) | Community policies, discussion guides, roles, and roadmap |
-| [`resources/`](resources/) | Curated learning resources and official documentation |
-| [`challenges/`](challenges/) | Challenge system, template, and current challenge |
-| [`scripts/`](scripts/) | Local validation tooling |
-
-## Project Status
-
-DevSphere launched in **November 2026** and is actively being built in public. The repository contains the community's policies, resources, challenge system, discussion playbook, and brand assets. The six-month roadmap is available in **[COMMUNITY_ROADMAP.md](community/COMMUNITY_ROADMAP.md)**.
-
-The best way to follow progress is to **watch this repository** and read the **Announcements** category in Discussions. No member counts, partnerships, sponsors, or achievements are claimed here; the community's story will be written by the people who participate.
-
-## License
-
-The content of this repository is available under the **[MIT License](LICENSE)**. The DevSphere name, logo, and brand assets are community identity assets; see **[Brand Guidelines](assets/branding/README.md)** for permitted use.
-
 ---
 
+## Join DevSphere Today
+
+You do not need a polished portfolio, a senior title, or a paid course to participate. Bring a question, a project, a review, or a willingness to learn.
+
 <p align="center">
-  <strong>CONNECT. CODE. COLLABORATE. CREATE.</strong><br>
-  <sub>Built with care for the global developer community.</sub>
+  <strong><a href="https://github.com/Sumit-tech01/DevSphere-Community/discussions">Join DevSphere Discussions →</a></strong><br>
+  <sub>Free · GitHub-native · Built in public</sub>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Sumit-tech01/DevSphere-Community/discussions">Discussions</a> ·
-  <a href="https://github.com/Sumit-tech01/DevSphere-Community/issues">Issues</a> ·
-  <a href="CONTRIBUTING.md">Contributing</a> ·
-  <a href="SUPPORT.md">Support</a> ·
+  <a href="https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/introductions">Introduce yourself</a> ·
+  <a href="https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/questions-help">Ask a question</a> ·
+  <a href="https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase">Share a project</a> ·
+  <a href="community/COLLABORATION_GUIDE.md">Find collaborators</a>
+</p>
+
+> **Connect. Code. Collaborate. Create.**
+
+<p align="center">
+  <sub>Read the <a href="CODE_OF_CONDUCT.md">Code of Conduct</a> · <a href="CONTRIBUTING.md">Contributing Guide</a> · <a href="SUPPORT.md">Support</a> · <a href="LICENSE">License</a></sub>
+</p>
+
+<p align="center">
   <a href="#devsphere">Back to top</a>
 </p>

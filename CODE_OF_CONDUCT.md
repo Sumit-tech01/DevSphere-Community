@@ -56,7 +56,7 @@ If you experience or witness unacceptable behavior, or have any other concerns, 
 **How to report**
 
 1. Contact the founder or a maintainer through the contact method listed on [@Sumit-tech01's GitHub profile](https://github.com/Sumit-tech01). Use a private channel when possible.
-2. If the concern involves the founder or a maintainer, or you are not comfortable contacting them, use GitHub's [Report abuse](https://github.com/contact/report-abuse) flow.
+2. If the concern involves the founder or a maintainer, or you are not comfortable contacting them, use GitHub's [reporting abuse or spam guide](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
 3. Do not open a public issue or discussion for a sensitive report. Public disclosure can expose the people involved and make the situation harder to resolve.
 
 **What to include**
@@ -103,10 +103,10 @@ If you believe a moderation decision was made in error, you may request a review
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct/](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
 Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/inclusion).
 
-For answers to common questions about this code of conduct, see the FAQ at [https://www.contributor-covenant.org/faq](https://www.contributor-covenant.org/faq). Translations are available at [https://www.contributor-covenant.org/translations](https://www.contributor-covenant.org/translations).
+For answers to common questions about this code of conduct, see the FAQ at [https://www.contributor-covenant.org/faq/](https://www.contributor-covenant.org/faq/). Translations are available at [https://www.contributor-covenant.org/translations/](https://www.contributor-covenant.org/translations/).
 
 This Code of Conduct is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).

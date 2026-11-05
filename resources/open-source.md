@@ -1,6 +1,6 @@
 # Open Source Resources
 
-A free guide to Git, GitHub, licensing, first contributions, project maintenance, and healthy open-source communities.
+A free guide to Git, GitHub, licensing, first contributions, project maintenance, and healthy open-source communities. For the step-by-step workflow and communication advice, read the [DevSphere Open-Source Guide](../community/OPEN_SOURCE_GUIDE.md); this page is the curated reference collection.
 
 > Start with one small contribution. You do not need to be an expert to be useful. See the [resource index](README.md) for selection criteria.
 
@@ -62,7 +62,7 @@ A free guide to Git, GitHub, licensing, first contributions, project maintenance
 | [Open Source Initiative — Licenses](https://opensource.org/licenses) | License list and definitions |
 | [SPDX License List](https://spdx.org/licenses/) | Standard license identifiers |
 | [GNU License List](https://www.gnu.org/licenses/license-list.html) | Free-license evaluation from the FSF |
-| [Creative Commons — Choose a License](https://creativecommons.org/choose/) | Licenses for non-code content |
+| [Creative Commons — Choose a License](https://creativecommons.org/chooser/) | Licenses for non-code content |
 
 **Key ideas:**
 
@@ -102,8 +102,8 @@ A free guide to Git, GitHub, licensing, first contributions, project maintenance
 | --- | --- |
 | [GitHub — Code Security](https://docs.github.com/en/code-security) | Dependabot, secret scanning, and code scanning |
 | [GitHub — Security hardening for Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) | Protect workflows and credentials |
-| [OpenSSF — Best Practices](https://www.bestpractices.dev/) | Secure software development guidance |
-| [OWASP — Top Ten](https://owasp.org/www-project-top-ten/) | Common application security risks |
+| [OpenSSF — Best Practices](https://www.bestpractices.dev/en) | Secure software development guidance |
+| [OWASP — Top Ten](https://owasp.org/projects/top-ten) | Common application security risks |
 | [CWE Top 25](https://cwe.mitre.org/top25/) | Common software weaknesses |
 
 **Never commit secrets.** If a credential is exposed, revoke it immediately, then remove it from history and rotate related credentials. Deleting the file alone is not enough.
@@ -116,7 +116,7 @@ A free guide to Git, GitHub, licensing, first contributions, project maintenance
 | [GitHub — Building communities](https://docs.github.com/en/communities) | Discussions, contributors, and moderation |
 | [GitHub — Discussions quickstart](https://docs.github.com/en/discussions/quickstart) | Set up community conversations |
 | [Open Source Guides — Leadership and Governance](https://opensource.guide/leadership-and-governance/) | Different project and governance models |
-| [CHAOSS](https://chaoss.community/) | Community health metrics and practices |
+| [CHAOSS](https://www.chaoss.community/) | Community health metrics and practices |
 | [GitHub — Community health files](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file) | Default templates across repositories |
 
 ## Suggested learning sequence
@@ -142,4 +142,4 @@ A free guide to Git, GitHub, licensing, first contributions, project maintenance
 
 ---
 
-**Related:** [Programming](programming.md) · [Web Development](web-development.md) · [AI & Machine Learning](artificial-intelligence.md) · [Contributing to DevSphere](../CONTRIBUTING.md)
+**Related:** [Open-Source Guide](../community/OPEN_SOURCE_GUIDE.md) · [Collaboration Guide](../community/COLLABORATION_GUIDE.md) · [Learning Roadmaps](learning-roadmaps.md) · [Programming](programming.md) · [Web Development](web-development.md) · [AI & Machine Learning](artificial-intelligence.md) · [Contributing to DevSphere](../CONTRIBUTING.md) · [Collaboration discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration)

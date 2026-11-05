@@ -1,6 +1,6 @@
 # AI & Machine Learning Resources
 
-A free, structured path from machine learning foundations to modern generative AI, with an emphasis on understanding, evaluation, and responsible use.
+A free, structured path from machine learning foundations to modern generative AI, with an emphasis on understanding, evaluation, and responsible use. For staged learning sequences, see the [AI Engineer](learning-roadmaps.md#ai-engineer), [ML Engineer](learning-roadmaps.md#machine-learning-engineer), and [Data Scientist](learning-roadmaps.md#data-scientist) roadmaps.
 
 > AI changes quickly. Prefer official documentation and papers over undated summaries. Optional paid certificates are not required for any core resource here. See the [resource index](README.md) for selection criteria.
 
@@ -53,27 +53,41 @@ A free, structured path from machine learning foundations to modern generative A
 
 | Resource | Level | Notes |
 | --- | --- | --- |
-| [PyTorch — Learn the Basics](https://pytorch.org/tutorials/beginner/basics/intro.html) | Beginner | Official PyTorch fundamentals |
-| [PyTorch — Tutorials](https://pytorch.org/tutorials/) | All | Guided projects and advanced topics |
+| [PyTorch — Learn the Basics](https://docs.pytorch.org/tutorials/beginner/basics/intro.html) | Beginner | Official PyTorch fundamentals |
+| [PyTorch — Tutorials](https://docs.pytorch.org/tutorials/) | All | Guided projects and advanced topics |
 | [TensorFlow — Tutorials](https://www.tensorflow.org/tutorials) | Beginner–Advanced | Official TensorFlow learning path |
 | [fast.ai — Practical Deep Learning](https://course.fast.ai/) | Beginner–Intermediate | Build working models quickly |
 | [Dive into Deep Learning](https://d2l.ai/) | Intermediate | Free interactive textbook with code |
 | [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) | Beginner | Free book on fundamentals |
-| [Hugging Face — Deep RL Course](https://huggingface.co/learn/deep-rl-course) | Intermediate | Reinforcement learning with hands-on units |
+| [Hugging Face — Deep RL Course](https://huggingface.co/learn/deep-rl-course/unit0/introduction) | Intermediate | Reinforcement learning with hands-on units |
 
 ## Generative AI and LLMs
 
 | Resource | Level | Notes |
 | --- | --- | --- |
-| [Hugging Face — Transformers Documentation](https://huggingface.co/docs/transformers) | Intermediate | Models, tokenizers, training, and inference |
-| [Hugging Face — LLM Course](https://huggingface.co/learn/llm-course) | Beginner–Intermediate | Open LLM learning path |
-| [OpenAI — Documentation](https://platform.openai.com/docs) | Intermediate | API concepts and guides |
-| [Google — Gemini API Documentation](https://ai.google.dev/gemini-api/docs) | Intermediate | Official Gemini developer docs |
-| [Anthropic — Documentation](https://docs.anthropic.com/) | Intermediate | Claude API and prompting guidance |
+| [Hugging Face — Transformers Documentation](https://huggingface.co/docs/transformers/index) | Intermediate | Models, tokenizers, training, and inference |
+| [Hugging Face — LLM Course](https://huggingface.co/learn/llm-course/chapter1/1) | Beginner–Intermediate | Open LLM learning path |
+| [OpenAI — Documentation](https://developers.openai.com/api/docs) | Intermediate | API concepts and guides |
+| [Google — Gemini API Documentation](https://aistudio.google.com/docs) | Intermediate | Official Gemini developer docs |
+| [Anthropic — Documentation](https://platform.claude.com/docs/en/home) | Intermediate | Claude API and prompting guidance |
 | [Microsoft — Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) | Beginner | 21-lesson free course |
 | [Prompt Engineering Guide](https://www.promptingguide.ai/) | Beginner–Intermediate | Community guide with papers and techniques |
-| [Hugging Face — Diffusers](https://huggingface.co/docs/diffusers) | Intermediate | Diffusion models for image generation |
+| [Hugging Face — Diffusers](https://huggingface.co/docs/diffusers/index) | Intermediate | Diffusion models for image generation |
 | [Hugging Face — Papers](https://huggingface.co/papers) | Advanced | Daily research digest with discussion |
+
+## AI application development
+
+Building an AI application is software engineering plus model behavior. The useful skills are retrieval, tool design, evaluation, observability, and failure handling — not only prompt wording.
+
+| Resource | Level | Notes |
+| --- | --- | --- |
+| [LangChain overview](https://docs.langchain.com/oss/python/langchain/overview) | Intermediate | Framework concepts for models, tools, and retrieval |
+| [OpenAI Cookbook](https://developers.openai.com/cookbook) | Intermediate | Practical API patterns, evaluation ideas, and examples |
+| [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction) | Beginner–Intermediate | Agents, tools, and workflows with hands-on units |
+
+See [Retrieval, evaluation, and production](#retrieval-evaluation-and-production) for evaluation and operations, and [Responsible AI](#responsible-ai) for risk and human oversight.
+
+**Practice idea:** Build a small application with one model call, one retrieval path, one tool, and a fixed evaluation set. Record latency, token usage, cost, and failure cases. Add a human-readable refusal path when the evidence is insufficient.
 
 ## Retrieval, evaluation, and production
 
@@ -82,9 +96,9 @@ A free, structured path from machine learning foundations to modern generative A
 | Embeddings and retrieval | [Hugging Face — Sentence Transformers](https://sbert.net/) |
 | Vector search | [Faiss](https://faiss.ai/) |
 | Experiment tracking | [MLflow](https://mlflow.org/docs/latest/index.html) |
-| Data versioning | [DVC](https://dvc.org/doc) |
+| Data versioning | [DVC](https://doc.dvc.org) |
 | Model evaluation | [scikit-learn — Metrics](https://scikit-learn.org/stable/modules/model_evaluation.html) |
-| LLM evaluation | [Hugging Face — Evaluate](https://huggingface.co/docs/evaluate) |
+| LLM evaluation | [Hugging Face — Evaluate](https://huggingface.co/docs/evaluate/index) |
 | MLOps overview | [MLOps Guide](https://mlops-guide.github.io/) |
 | Full-stack deep learning | [Full Stack Deep Learning](https://fullstackdeeplearning.com/course/) |
 
@@ -96,7 +110,7 @@ A free, structured path from machine learning foundations to modern generative A
 | --- | --- |
 | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | A structured approach to AI risk |
 | [UNESCO — Recommendation on the Ethics of AI](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics) | Global ethical framework |
-| [Google — Responsible AI Practices](https://ai.google/responsibility/responsible-ai-practices/) | Practical principles and tools |
+| [Google — AI Principles](https://ai.google/principles/#our-ai-principles-in-action) | Principles and practical commitments |
 | [Microsoft — Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) | Principles, resources, and impact assessment |
 | [Google PAIR — People + AI Guidebook](https://pair-code.github.io/) | Human-centered AI design |
 | [OECD — AI Principles](https://oecd.ai/en/ai-principles) | International policy principles |
@@ -117,9 +131,10 @@ A free, structured path from machine learning foundations to modern generative A
 | [arXiv — cs.LG](https://arxiv.org/list/cs.LG/recent) | Recent machine learning preprints |
 | [arXiv — cs.CL](https://arxiv.org/list/cs.CL/recent) | Computation and language research |
 | [OpenReview](https://openreview.net/) | Peer review and conference papers |
-| [Papers with Code](https://paperswithcode.com/) | Papers linked to implementations |
 | [Hugging Face — Blog](https://huggingface.co/blog) | Practical model and tooling updates |
-| [Google AI Blog](https://blog.google/technology/ai/) | Product and research announcements |
+| [Google — AI news](https://blog.google/innovation-and-ai/technology/ai/) | Product and research announcements |
+
+The Hugging Face Papers feed in the generative-AI section is another way to follow current research.
 
 Preprints are not peer-reviewed. Read claims critically, check baselines, and reproduce results before relying on them.
 
@@ -146,4 +161,4 @@ Preprints are not peer-reviewed. Read claims critically, check baselines, and re
 
 ---
 
-**Related:** [Programming](programming.md) · [Web Development](web-development.md) · [Open Source](open-source.md) · [AI & Machine Learning discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions)
+**Related:** [Learning Roadmaps](learning-roadmaps.md) · [Programming](programming.md) · [Web Development](web-development.md) · [Developer Tools](developer-tools.md) · [Open Source](open-source.md) · [AI & Machine Learning discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/ai-machine-learning)

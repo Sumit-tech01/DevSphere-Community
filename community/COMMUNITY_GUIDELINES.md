@@ -65,6 +65,7 @@ We want DevSphere to feel like a well-run engineering community: curious, genero
 - Redact sensitive values from logs and screenshots.
 - Do not share someone else's contact information without permission.
 - Do not ask members to send you private credentials or identity documents.
+- Do not nominate, quote, or feature someone in the Developer Spotlight without their explicit permission. Read the [Spotlight consent rules](DEVELOPER_SPOTLIGHT.md#permission-and-approval-requirements).
 
 ## 3. Posting guidelines by type
 
@@ -96,6 +97,7 @@ Use the **Questions & Help** category (Q&A format) and mark the reply that solve
 - State the technologies and your role.
 - Be specific about the feedback you want.
 - Do not post the same project repeatedly without meaningful updates.
+- Follow the [Project and Resource Discovery framework](PROJECT_DISCOVERY.md) when submitting a project, tool, app, or learning resource.
 
 ### Collaboration requests
 

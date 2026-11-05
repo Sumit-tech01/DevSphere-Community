@@ -15,7 +15,7 @@ DevSphere is a volunteer-run, free community. This page explains where to ask fo
 | A security vulnerability | Follow [SECURITY.md](SECURITY.md) — never post it publicly |
 | A conduct or safety concern | Follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) |
 | A contribution workflow question | Read [CONTRIBUTING.md](CONTRIBUTING.md), then ask in Discussions |
-| GitHub account or platform support | [GitHub Support](https://support.github.com/) |
+| GitHub account or platform support | [GitHub Support](https://help.github.com/) |
 
 ## Before you ask
 

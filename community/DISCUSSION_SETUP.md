@@ -1,19 +1,16 @@
 # DevSphere Discussions Setup Guide
 
-This guide is the administrative playbook for configuring DevSphere's GitHub Discussions. It records what is verified, what must be done manually, and how to confirm the result.
+This is the administrative reference for DevSphere's GitHub Discussions. It records the verified live configuration, the checks that remain manual, and the procedure for maintaining the category structure over time.
 
 > **Live status verified 3 November 2026:**
 >
 > - Discussions are **enabled** for `Sumit-tech01/DevSphere-Community`.
-> - **16 categories currently exist:** the 12 target categories plus four legacy categories (Ideas, Polls, Q&A, and Show and tell).
-> - **11 of the 12 target categories have the emoji embedded in the Name field.** Their slugs begin with a hyphen, for example `-introductions` and `-general-discussion`. The Name field must be cleaned up and the emoji selected separately.
-> - Three launch discussions exist:
->   - #1 Welcome to DevSphere, in **Announcements**, pinned.
->   - #2 Introduce Yourself to DevSphere, in **Introductions**, not pinned.
->   - #3 DevSphere Project Showcase, in **Project Showcase**, not pinned.
+> - **Exactly 12 categories exist** with clean names and stable slugs.
+> - Emoji metadata is returned for **12/12 categories**.
+> - Launch discussions #1, #2, and #3 are in **Announcements**, **Introductions**, and **Project Showcase**. All three are pinned.
 > - The social preview is uploaded and matches `assets/branding/social-preview.png`.
 >
-> The 12-category structure is present but not yet clean. Run `python3 scripts/verify_discussions.py` for the current live check.
+> `python3 scripts/verify_discussions.py` reports **AUTOMATED CHECKS PASS**. One manual UI check remains: confirm that Announcements uses the **Announcement** format and only maintainers can start discussions.
 
 ---
 
@@ -21,13 +18,13 @@ This guide is the administrative playbook for configuring DevSphere's GitHub Dis
 
 GitHub Discussions categories are repository settings, not files. Adding Markdown documents to a repository cannot create categories, change discussion formats, or move existing discussions.
 
-The GitHub GraphQL API supports creating discussions and changing a discussion's category, but category **creation and deletion** are handled through the repository's Discussions settings in the web interface. The repository's automated setup therefore stops at documentation and post preparation.
+The GitHub GraphQL API supports creating discussions and changing a discussion's category, but category **creation and deletion** are handled through the repository's Discussions settings in the web interface. The repository's automated setup therefore stops at documentation and verification.
 
-**Verified limitation:** The available GraphQL mutations are `createDiscussion`, `updateDiscussion`, `deleteDiscussion`, and related comment/answer mutations. No discussion-category creation mutation is available.
+**Verified limitation:** the available GraphQL mutations include `createDiscussion`, `updateDiscussion`, `deleteDiscussion`, and related comment and answer mutations. No discussion-category creation mutation is available.
 
-## 2. Target category architecture
+## 2. Category architecture
 
-The target architecture is below. Use the exact names, emojis, descriptions, and formats when cleaning up or recreating a category.
+Use the exact names, emojis, descriptions, and formats below when maintaining or recreating a category.
 
 | Order | Emoji | Category name | Format | Description |
 | --- | --- | --- | --- | --- |
@@ -51,197 +48,118 @@ The target architecture is below. Use the exact names, emojis, descriptions, and
 - **All other categories (Open-ended discussion):** any member can start a conversation, which is essential for a community-driven space.
 - **No Polls category:** polls can still be created in open-ended categories when a decision needs community input. A dedicated Polls category adds clutter without adding participation.
 
-## 3. Apply the configuration
+### Recognition program mapping
 
-You need **maintain** or **admin** permission on the repository.
+The Developer Spotlight and Community Recognition program deliberately uses existing categories:
 
-### Step 1 — Confirm Discussions is enabled
+| Program need | Existing category |
+| --- | --- |
+| Program announcements and published profiles | **Announcements** |
+| Nominations, questions, and Builder of the Month nominations | **General Discussion** |
+| Project Review Friday submissions | **Project Showcase** |
+| Collaboration and teammate matching | **Collaboration** |
 
-1. Open the repository on GitHub, then go to **Settings → General**. The **Settings** tab is visible only to users with maintain or admin permission.
-2. In the **Features** section, confirm **Discussions** is checked.
-3. If it is not checked, enable it and save. This is a one-time setting.
+Do not create a separate `Spotlight`, `Recognition`, or `Nominations` category. It would add a 13th category, fragment the conversation, and require changes to the verified architecture. See the [recognition publishing guide](discussions/recognition/README.md).
 
-### Step 2 — Open the category manager
+## 3. Verified live configuration
 
-1. Go to the [Discussions tab](https://github.com/Sumit-tech01/DevSphere-Community/discussions).
-2. In the left sidebar, find **Categories**.
-3. Click the **pencil icon** next to Categories.
-4. The **Manage discussion categories** page opens.
+| Check | Status |
+| --- | --- |
+| Discussions enabled | ✅ Verified |
+| Exactly 12 categories | ✅ Verified by the read-only verifier |
+| Category names contain no embedded emoji | ✅ Verified |
+| Emoji metadata returned for every category | ✅ 12/12 |
+| Questions & Help uses the question-and-answer format | ✅ Verified via `isAnswerable` |
+| Announcements uses the Announcement format | ⏳ Confirm in the GitHub UI |
+| Launch post #1 in Announcements | ✅ Verified |
+| Launch post #2 in Introductions | ✅ Verified |
+| Launch post #3 in Project Showcase | ✅ Verified |
+| Launch posts #1–#3 pinned | ✅ Verified |
+| Category sidebar order matches the table above | ⏳ Visual check in the GitHub UI |
+| Social preview uploaded | ✅ Verified |
+| Repository validation and Markdown lint | ✅ Passing |
 
-### Step 3 — Remove the embedded emoji from category names
+The GraphQL API returns categories alphabetically, not in sidebar order. Confirm the visible order in the repository interface.
 
-Eleven target categories were created with the emoji inside the **Name** field. This produces slugs beginning with a hyphen. Edit each category in place: remove the emoji from the Name field, then choose the emoji with the picker.
+## 4. Verify the configuration
 
-| Current live name | Correct Name field | Emoji | Format |
-| --- | --- | --- | --- |
-| 👋 Introductions | Introductions | 👋 | Open-ended discussion |
-| 💬 General Discussion | General Discussion | 💬 | Open-ended discussion |
-| 💻 Programming | Programming | 💻 | Open-ended discussion |
-| 🤖 AI & Machine Learning | AI & Machine Learning | 🤖 | Open-ended discussion |
-| 🌐 Web Development | Web Development | 🌐 | Open-ended discussion |
-| 📱 App Development | App Development | 📱 | Open-ended discussion |
-| 🚀 Project Showcase | Project Showcase | 🚀 | Open-ended discussion |
-| ❓ Questions & Help | Questions & Help | 🙋 | Question and answer |
-| 🏆 Hackathons & Challenges | Hackathons & Challenges | 🏆 | Open-ended discussion |
-| 🤝 Collaboration | Collaboration | 🤝 | Open-ended discussion |
-| 💼 Career & Opportunities | Career & Opportunities | 🎓 | Open-ended discussion |
-
-**Announcements** already has a plain name and the 📣 emoji. Do not delete a target category that contains a discussion; edit it in place instead.
-
-### Step 4 — Create any missing categories
-
-All 12 target categories were present at the 3 November 2026 audit, so no creation is currently required. If a target category is missing, click **New category** and use its exact name, emoji, description, and format from the table in [section 2](#2-target-category-architecture). Do not create a duplicate when the category exists under a slightly different name; edit the existing category instead.
-
-Each category name and emoji pair must be unique. GitHub allows up to 25 categories per repository; DevSphere uses exactly 12.
-
-### Step 5 — Remove the four legacy categories
-
-The target structure does not include **Ideas**, **Polls**, **Q&A**, or **Show and tell**. All four were empty at the 3 November 2026 audit.
-
-1. Open each category and confirm it has no discussions.
-2. If a category is empty, click the trash icon next to it and confirm deletion.
-3. If it contains discussions, choose a destination category during deletion so nothing is lost.
-4. Do not delete **Announcements** or any target category.
-
-The documented target is exactly 12 categories. Do not keep extra categories unless the change is deliberate and recorded.
-
-### Step 6 — Order the categories
-
-On the **Manage discussion categories** page, drag categories into the order shown in [section 2](#2-target-category-architecture). The sidebar order is the first thing new members see, so keep the journey intentional:
-
-1. Welcome: Announcements, Introductions
-2. Community: General Discussion
-3. Learn: Programming, AI & Machine Learning, Web Development, App Development
-4. Build: Project Showcase, Questions & Help, Hackathons & Challenges, Collaboration
-5. Grow: Career & Opportunities
-
-### Step 7 — Verify the three launch discussions
-
-The category move was completed on 3 November 2026. Discussion URLs are unchanged because they use the discussion number.
-
-| Discussion | Current category | Status |
-| --- | --- | --- |
-| #1 Welcome to DevSphere — The Global Developer Community | **Announcements** | Keep; pinned |
-| #2 Introduce Yourself to DevSphere | **Introductions** | Moved; pin pending |
-| #3 DevSphere Project Showcase — What Are You Building? | **Project Showcase** | Moved; pin pending |
-
-Do not create duplicate discussions. If a discussion needs to be moved again, use one of the options below.
-
-**Option A — Web interface**
-
-1. Open the discussion.
-2. Click the **...** menu in the top-right of the discussion.
-3. Choose **Change category** (or open the edit view and select the category, depending on the GitHub interface version).
-4. Select the destination and save.
-5. Verify the category label appears on the discussion.
-
-**Option B — GraphQL API (advanced)**
-
-List the category and discussion IDs:
+Run the read-only verifier from the repository root:
 
 ```bash
-gh api graphql -f query='
-query {
-  repository(owner: "Sumit-tech01", name: "DevSphere-Community") {
-    discussionCategories(first: 25) {
-      nodes { id name }
-    }
-  }
-}'
+python3 scripts/verify_discussions.py
 ```
 
-Then update each discussion. Replace the category and discussion IDs with the values from your repository:
+The script checks the category count, names, slugs, emoji metadata, discussion placement, and pinned posts. It does **not** change GitHub settings.
 
-```bash
-gh api graphql -f query='
-mutation {
-  updateDiscussion(input: {
-    discussionId: "D_kwDO...",
-    categoryId: "DIC_kwDO..."
-  }) {
-    discussion { number title category { name } }
-  }
-}'
-```
-
-Do not paste tokens into commands; the authenticated `gh` CLI handles credentials.
-
-### Step 8 — Pin and label the launch posts
-
-1. Confirm #1 is pinned in **Announcements** — verified.
-2. Pin #2 in **Introductions** — pending.
-3. Pin #3 in **Project Showcase** — pending.
-4. Add labels such as `announcement`, `introduction`, `showcase`, `challenge`, and `question` where they help filtering.
-5. Keep pinned posts to a small set; too many pinned threads bury new conversations.
-
-GitHub's GraphQL API exposes no discussion-pin mutation, so pinning must be done in the web interface.
-
-### Step 9 — Assign category moderators (when the team grows)
-
-In the category settings, add moderators who have shown consistent, fair judgment. Category moderators can help move posts and enforce the [Community Guidelines](COMMUNITY_GUIDELINES.md). Do not assign moderation rights before the person has read the [Moderation Policy](MODERATION_POLICY.md).
-
-### Step 10 — Verify the configuration
-
-Status verified on 3 November 2026:
-
-- [x] Discussions is enabled in repository settings.
-- [ ] Exactly twelve categories exist with the documented names and emojis.
-- [ ] Category names contain no embedded emoji.
-- [x] #1 is in Announcements.
-- [x] #2 is in Introductions.
-- [x] #3 is in Project Showcase.
-- [x] #1 is pinned.
-- [ ] #2 and #3 are pinned.
-- [x] Questions & Help uses the **Question and answer** format.
-- [ ] Announcements uses the **Announcement** format.
-- [x] All other target categories are non-answerable.
-- [ ] Ideas, Polls, Q&A, and Show and tell are removed.
-- [ ] Categories appear in the intended order.
-- [ ] A test question can be marked as answered in Questions & Help.
-- [ ] A non-maintainer account cannot start a discussion in Announcements.
-- [ ] Category links use clean slugs and open without a 404.
-- [ ] The README category table matches the live categories.
-
-## 4. Category links
-
-After configuration, the category URLs should follow this pattern:
+Expected automated result:
 
 ```text
-https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/<slug>
+Categories: 12/12
+Emoji metadata returned for 12/12 categories.
+#1 -> Announcements
+#2 -> Introductions
+#3 -> Project Showcase
+Pinned discussions: #1, #2, #3
+Result: AUTOMATED CHECKS PASS
 ```
 
-Until Step 3 is complete, the live slugs for the 11 affected categories begin with a hyphen, for example `-introductions`. Use the links from the live sidebar rather than guessing. The table below is the expected slug after the Name field is cleaned up; GitHub may regenerate it when the category is edited.
+### Manual UI checks
 
-| Category | Expected slug |
+1. Open **Settings → General → Features** and confirm **Discussions** is enabled.
+2. Open the category manager and confirm the visible sidebar order matches [the architecture table](#2-category-architecture).
+3. Open **Announcements** and confirm the format is **Announcement** and that a non-maintainer account cannot start a discussion.
+4. Confirm every category link below opens without a 404.
+5. Keep pinned posts to three or four.
+
+## 5. Category links
+
+The live category links use these exact slugs:
+
+| Category | Live URL |
 | --- | --- |
-| Announcements | `announcements` |
-| Introductions | `introductions` |
-| General Discussion | `general-discussion` |
-| Programming | `programming` |
-| AI & Machine Learning | `ai-machine-learning` |
-| Web Development | `web-development` |
-| App Development | `app-development` |
-| Project Showcase | `project-showcase` |
-| Questions & Help | `questions-help` |
-| Hackathons & Challenges | `hackathons-challenges` |
-| Collaboration | `collaboration` |
-| Career & Opportunities | `career-opportunities` |
+| Announcements | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/announcements) |
+| Introductions | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/introductions) |
+| General Discussion | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/general-discussion) |
+| Programming | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/programming) |
+| AI & Machine Learning | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/ai-machine-learning) |
+| Web Development | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/web-development) |
+| App Development | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/app-development) |
+| Project Showcase | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/project-showcase) |
+| Questions & Help | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/questions-help) |
+| Hackathons & Challenges | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/hackathons-challenges) |
+| Collaboration | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/collaboration) |
+| Career & Opportunities | [Open](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/career-opportunities) |
 
-Verify each slug in the browser before adding category-specific links to the README. Do not guess a URL and publish it as working.
+Do not guess a category URL. Open the category from the sidebar and copy the real link.
 
-## 5. Publishing the prepared posts
+## 6. Recreating or editing a category
 
-Twelve draft files are in [`community/discussions/`](discussions/README.md). Each file includes hidden metadata comments with the recommended title, category, format, and labels. Three drafts correspond to the live discussions #1, #2, and #3; use them only as reference copy or to refresh the existing bodies. The other nine are ready to publish.
+You need **maintain** or **admin** permission.
+
+1. Open the [Discussions tab](https://github.com/Sumit-tech01/DevSphere-Community/discussions).
+2. In the left sidebar, find **Categories** and click the pencil icon.
+3. To edit a category, change its name, emoji, description, or format in place. Avoid deleting a category that contains discussions.
+4. To create a missing category, click **New category** and use the exact name, emoji, description, and format from [the architecture table](#2-category-architecture).
+5. Each category name and emoji pair must be unique. GitHub allows up to 25 categories per repository; DevSphere uses exactly 12.
+6. Drag categories into the intended order and save.
+7. Re-run the verifier and complete the manual UI checks.
+
+Do not create a duplicate category when one already exists under a slightly different name. Edit the existing category instead.
+
+## 7. Publishing the prepared posts
+
+Twelve draft files are in [`community/discussions/`](discussions/README.md). Each file includes hidden metadata comments with the recommended title, category, format, and labels. Three drafts correspond to live discussions #1, #2, and #3; use them only as reference copy or to refresh the existing bodies. The other nine can be published when there is capacity to respond.
 
 **Publishing rules:**
 
 - Do not publish drafts **01**, **03**, or **04** as new threads. Keep #1, #2, and #3 and refresh them in place.
-- Update and pin the existing **Introduce Yourself** (#2) and **Project Showcase** (#3) posts.
-- Space the remaining nine posts over the first two weeks instead of publishing everything at once.
+- Space new posts over several weeks instead of publishing everything at once.
 - Personalize dates, challenge numbers, and links before posting.
 - Verify that links resolve and that no placeholder text remains.
+- Do not publish a thread unless there is capacity to reply.
+- Keep the pinned set small.
 
-## 6. Troubleshooting
+## 8. Troubleshooting
 
 | Problem | Likely cause | Solution |
 | --- | --- | --- |
@@ -249,7 +167,7 @@ Twelve draft files are in [`community/discussions/`](discussions/README.md). Eac
 | Cannot delete a category | Category contains discussions | Choose a destination category when deleting, or move discussions first |
 | Category name is rejected | Name/emoji pair already exists | Use a unique name and emoji combination |
 | Category name shows a leading hyphen or duplicated emoji | Emoji was typed into the **Name** field | Edit the category, remove the emoji from **Name**, then choose it with the emoji picker |
-| 16 categories remain instead of 12 | Legacy categories are still present | Delete **Ideas**, **Polls**, **Q&A**, and **Show and tell** after moving any discussions |
+| More than 12 categories appear | An extra category was created | Review the list and remove only an empty, unintended category |
 | A launch post is not pinned | Pin action was not run | Open the discussion's **⋯** menu and choose **Pin**; no GraphQL pin mutation is available |
 | "Change category" is missing | Interface version or permissions | Use the edit view or GraphQL `updateDiscussion` with `categoryId` |
 | Category link returns 404 | Wrong slug or category not created | Open the category from the sidebar and copy the real URL |
@@ -257,32 +175,33 @@ Twelve draft files are in [`community/discussions/`](discussions/README.md). Eac
 | Q&A has no accepted answer | Wrong format selected | Edit the category and set format to **Question and answer** |
 | Existing discussions disappeared | A category was deleted | Check the destination category selected during deletion |
 
-## 7. Maintenance
+## 9. Maintenance
 
 - Review categories **quarterly** or when a category consistently receives misplaced posts.
 - Do not create a new category for every technology; add one only when there is sustained conversation.
 - Move misplaced discussions instead of deleting them.
 - Update pinned posts when challenges, policies, or programs change.
 - Record category changes in the [changelog](../CHANGELOG.md).
-- Re-run the verification checklist after any structural change.
+- Re-run the verifier after any structural change.
 
-## 8. What was automated and what was not
+## 10. Automation status
 
 | Task | Status |
 | --- | --- |
-| Discussions enabled | ✅ Verified enabled |
-| Repository files and discussion drafts | ✅ Created in this repository |
-| Target category creation | ✅ 12 target categories present (completed manually 3 November 2026) |
-| Category name cleanup | ❌ Manual — 11 names still embed the emoji |
-| Legacy category removal | ❌ Manual — Ideas, Polls, Q&A, and Show and tell remain |
-| Moving existing discussions | ✅ Completed 3 November 2026 — #2 and #3 moved via GraphQL; URLs unchanged |
-| Pinning posts | ⚠️ Partial — #1 pinned; #2 and #3 pending |
-| Assigning moderators | ❌ Optional/manual |
-| Publishing the remaining posts | ❌ Manual — nine remaining; drafts 01, 03, and 04 duplicate live threads |
-| Social preview upload | ✅ Uploaded and verified 3 November 2026 — matches `assets/branding/social-preview.png` |
+| Discussions enabled | ✅ Verified |
+| Repository files and discussion drafts | ✅ In this repository |
+| Twelve categories with clean names and slugs | ✅ Verified |
+| Emoji metadata | ✅ 12/12 verified |
+| Moving existing discussions | ✅ Completed; #1–#3 are correctly categorized |
+| Pinning launch posts | ✅ #1–#3 pinned |
+| Social preview upload | ✅ Uploaded and verified |
+| Announcement format / maintainer-only posting | ⏳ Manual UI confirmation |
+| Category sidebar order | ⏳ Manual UI confirmation |
+| Assigning moderators | Optional; do this when there is a consistent team |
+| Publishing the remaining posts | Manual and optional; do it only with response capacity |
 
-After the remaining cleanup, update the status note at the top of this document and re-run `python3 scripts/verify_discussions.py`.
+After any manual change, update the status note at the top of this document and re-run `python3 scripts/verify_discussions.py`.
 
 ---
 
-**Related documents:** [Discussion Guide](DISCUSSION_GUIDE.md) · [Community Guidelines](COMMUNITY_GUIDELINES.md) · [Moderation Policy](MODERATION_POLICY.md) · [Ready-to-publish posts](discussions/README.md)
+**Related documents:** [Discussion Guide](DISCUSSION_GUIDE.md) · [Community Guidelines](COMMUNITY_GUIDELINES.md) · [Moderation Policy](MODERATION_POLICY.md) · [Ready-to-publish posts](discussions/README.md) · [Recognition publishing guide](discussions/recognition/README.md) · [Developer Spotlight](DEVELOPER_SPOTLIGHT.md) · [Launch Playbook](LAUNCH_PLAYBOOK.md)

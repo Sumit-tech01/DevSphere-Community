@@ -1,8 +1,8 @@
 # DevSphere Community Roadmap
 
-**Version:** 1.0  
-**Planning window:** November 2026 – April 2027  
-**Last updated:** 3 November 2026
+**Version:** 1.2<br>
+**Planning window:** November 2026 – April 2027<br>
+**Last updated:** 5 November 2026
 
 This roadmap describes how DevSphere will grow over its first six months. It focuses on sustainable community foundations, free GitHub-native programs, and a consistent learning rhythm — not vanity metrics or rapid expansion.
 
@@ -24,7 +24,7 @@ The roadmap is a living document. Priorities may change based on community feedb
 | **Paused** | Intentionally delayed; reason documented |
 | **Dropped** | No longer planned; reason documented |
 
-Repository documentation and brand assets are complete as of the planning date. Live community configuration, programming, and engagement activities are starting now.
+Repository documentation and brand assets are complete as of the planning date. Live category configuration, emoji metadata, and launch-post placement are verified. Programming and engagement activities are starting now.
 
 ## Guiding principles
 
@@ -45,8 +45,9 @@ Repository documentation and brand assets are complete as of the planning date. 
 ### Goals
 
 - Complete the public repository foundation.
-- Apply the Discussions category structure.
-- Publish the launch posts and welcome the first members.
+- Apply and verify the Discussions category structure.
+- Publish and pin the launch posts.
+- Publish the resource hub, roadmaps, collaboration guides, and reusable templates.
 - Establish moderation and contribution expectations.
 - Launch the first coding challenge.
 
@@ -58,11 +59,17 @@ Repository documentation and brand assets are complete as of the planning date. 
 - [x] Prepare 12 ready-to-publish discussion posts.
 - [x] Publish the first coding challenge and reusable challenge template.
 - [x] Add issue templates, pull request template, and repository validation.
-- [ ] Apply the 12-category Discussions configuration in GitHub.
-- [ ] Move the three existing launch discussions into their target categories.
-- [ ] Pin the welcome, introduction, and project showcase posts.
-- [ ] Publish the official launch announcement and weekly feedback thread.
-- [ ] Verify the repository's social preview and description.
+- [x] Apply the 12-category Discussions configuration and verify clean slugs and emoji metadata.
+- [x] Move the three existing launch discussions into their target categories.
+- [x] Pin the welcome, introduction, and project showcase posts.
+- [x] Publish the official launch announcement (#1).
+- [x] Expand the resource library, add ten learning roadmaps, and document free/paid status.
+- [x] Publish the collaboration, open-source, spotlight, activities, resource-submission, and growth guides.
+- [x] Add reusable templates for proposals, teammates, collaboration, code review, showcase, resources, spotlight, and activities.
+- [x] Publish the Developer Spotlight handbook, full nomination and interview templates, four community initiative formats, project discovery framework, and recognition discussion drafts.
+- [x] Verify the repository's social preview, description, and live category links.
+- [ ] Publish the Developer Spotlight announcement and first Project Review Friday thread when there is capacity to respond.
+- [ ] Publish the weekly feedback thread and any optional seed posts when there is capacity to respond.
 
 ### Exit criteria
 
@@ -113,7 +120,7 @@ Repository documentation and brand assets are complete as of the planning date. 
 
 - [ ] Publish Challenge 002 with a different skill focus.
 - [ ] Add a community-curated "learning path" discussion for beginners.
-- [ ] Publish a resource contribution guide and review process.
+- [x] Publish a resource contribution guide and review process.
 - [ ] Host an asynchronous "what I learned this month" thread.
 - [ ] Invite members to write short technical explainers or project notes.
 - [ ] Review all external resource links for accuracy.
@@ -137,10 +144,10 @@ Repository documentation and brand assets are complete as of the planning date. 
 
 ### Deliverables
 
-- [ ] Publish a first-contribution walkthrough using a real, safe example.
-- [ ] Create a list of beginner-friendly open-source projects and issue types.
+- [x] Publish a first-contribution walkthrough using a real, safe example.
+- [x] Create a list of beginner-friendly open-source resources and issue types.
 - [ ] Host an asynchronous maintainer Q&A in **Collaboration**.
-- [ ] Publish a code review etiquette guide.
+- [x] Publish a code review etiquette guide.
 - [ ] Run a "documentation sprint" focused on DevSphere resources.
 - [ ] Invite members to share their first-contribution stories.
 - [ ] Review the contributor recognition process.
@@ -163,9 +170,9 @@ Repository documentation and brand assets are complete as of the planning date. 
 
 ### Deliverables
 
-- [ ] Publish a project showcase checklist for portfolios and demos.
+- [x] Publish a project showcase checklist for portfolios and demos.
 - [ ] Run an asynchronous portfolio feedback thread.
-- [ ] Publish guidance for evaluating job and internship postings.
+- [x] Publish guidance for evaluating job and internship postings.
 - [ ] Invite members to share interview preparation resources.
 - [ ] Review Career & Opportunities posts for scam risk and clarity.
 - [ ] Publish a community showcase featuring member projects.
@@ -286,4 +293,4 @@ Not every suggestion will be adopted. Every good-faith suggestion will be read, 
 
 ---
 
-**Related documents:** [Member Roles](MEMBER_ROLES.md) · [Discussion Guide](DISCUSSION_GUIDE.md) · [Community Guidelines](COMMUNITY_GUIDELINES.md) · [Changelog](../CHANGELOG.md)
+**Related documents:** [Member Roles](MEMBER_ROLES.md) · [Discussion Guide](DISCUSSION_GUIDE.md) · [Community Guidelines](COMMUNITY_GUIDELINES.md) · [Growth Strategy](GROWTH_STRATEGY.md) · [Community Activities](COMMUNITY_ACTIVITIES.md) · [Community Initiatives](COMMUNITY_INITIATIVES.md) · [Developer Spotlight](DEVELOPER_SPOTLIGHT.md) · [Changelog](../CHANGELOG.md)

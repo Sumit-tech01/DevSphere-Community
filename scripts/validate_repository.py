@@ -65,11 +65,38 @@ REQUIRED_FILES = [
     "community/MODERATION_POLICY.md",
     "community/MEMBER_ROLES.md",
     "community/COMMUNITY_ROADMAP.md",
+    "community/COLLABORATION_GUIDE.md",
+    "community/OPEN_SOURCE_GUIDE.md",
+    "community/DEVELOPER_SPOTLIGHT.md",
+    "community/COMMUNITY_INITIATIVES.md",
+    "community/COMMUNITY_ACTIVITIES.md",
+    "community/PROJECT_DISCOVERY.md",
+    "community/RESOURCE_SUBMISSION.md",
+    "community/GROWTH_STRATEGY.md",
     "community/discussions/README.md",
+    "community/discussions/recognition/README.md",
+    "community/templates/README.md",
+    "community/templates/PROJECT_PROPOSAL.md",
+    "community/templates/FIND_A_TEAMMATE.md",
+    "community/templates/COLLABORATION_REQUEST.md",
+    "community/templates/CODE_REVIEW_REQUEST.md",
+    "community/templates/PROJECT_SHOWCASE.md",
+    "community/templates/PROJECT_DISCOVERY_SUBMISSION.md",
+    "community/templates/RESOURCE_SUBMISSION.md",
+    "community/templates/DEVELOPER_SPOTLIGHT_TEMPLATE.md",
+    "community/templates/DEVELOPER_NOMINATION_TEMPLATE.md",
+    "community/templates/SPOTLIGHT_NOMINATION.md",
+    "community/templates/ACTIVITY_TEMPLATES.md",
+    "community/outreach/README.md",
+    "community/outreach/INVITATION_TEMPLATE.md",
     "resources/README.md",
+    "resources/learning-roadmaps.md",
     "resources/programming.md",
     "resources/artificial-intelligence.md",
     "resources/web-development.md",
+    "resources/app-development.md",
+    "resources/developer-tools.md",
+    "resources/career-development.md",
     "resources/open-source.md",
     "challenges/README.md",
     "challenges/CHALLENGE_TEMPLATE.md",
@@ -78,6 +105,73 @@ REQUIRED_FILES = [
 ]
 
 EXPECTED_DISCUSSION_POSTS = 12
+EXPECTED_RECOGNITION_POSTS = 5
+
+RECOGNITION_REQUIRED_METADATA = (
+    "Title:",
+    "Category:",
+    "Format:",
+    "Labels:",
+    "Schedule:",
+    "Publishing:",
+)
+
+KNOWN_DISCUSSION_CATEGORIES = {
+    "Announcements": "announcements",
+    "Introductions": "introductions",
+    "General Discussion": "general-discussion",
+    "Programming": "programming",
+    "AI & Machine Learning": "ai-machine-learning",
+    "Web Development": "web-development",
+    "App Development": "app-development",
+    "Project Showcase": "project-showcase",
+    "Questions & Help": "questions-help",
+    "Hackathons & Challenges": "hackathons-challenges",
+    "Collaboration": "collaboration",
+    "Career & Opportunities": "career-opportunities",
+}
+
+DISCUSSION_CATEGORY_URL_RE = re.compile(
+    r"https://github\.com/Sumit-tech01/DevSphere-Community/"
+    r"discussions/categories/([a-z0-9-]+)"
+)
+
+TEMPLATE_REQUIREMENTS = {
+    "community/templates/DEVELOPER_SPOTLIGHT_TEMPLATE.md": (
+        "1. Developer name",
+        "2. GitHub profile",
+        "3. Country or location (optional)",
+        "4. Developer introduction",
+        "5. Current role",
+        "6. Featured project",
+        "7. Project repository",
+        "8. Live demo or website (optional)",
+        "9. Technologies used",
+        "10. Problem the project solves",
+        "11. Development journey",
+        "12. Biggest challenges",
+        "13. Lessons learned",
+        "14. Advice for beginners",
+        "15. Future plans",
+        "16. Social links (optional)",
+        "17. Permission to publish",
+    ),
+    "community/templates/DEVELOPER_NOMINATION_TEMPLATE.md": (
+        "Nomination type",
+        "Nominee information",
+        "Project or contribution details",
+        "Why this person deserves recognition",
+        "Supporting links",
+        "Consent and permission",
+        "A nomination is not selection",
+    ),
+    "community/templates/PROJECT_DISCOVERY_SUBMISSION.md": (
+        "Submission type",
+        "Links",
+        "Affiliation and sponsorship disclosure",
+        "Privacy and safety checklist",
+    ),
+}
 
 KNOWN_LABELS = {
     "announcement",
@@ -95,6 +189,11 @@ KNOWN_LABELS = {
     "career",
     "opportunities",
     "open-source",
+    "spotlight",
+    "nomination",
+    "recognition",
+    "project-review",
+    "builder-of-the-month",
     "community",
     "question",
     "resource",
@@ -126,6 +225,10 @@ LINK_RE = re.compile(
 )
 MD_HEADING_RE = re.compile(r"(?m)^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
 HTML_HEADING_RE = re.compile(r"(?is)<h([1-6])[^>]*>(.*?)</h\1>")
+HTML_ID_RE = re.compile(
+    r"""<[a-zA-Z][^>]*\b(?:id|name)=["']([^"']+)["']""",
+    re.IGNORECASE,
+)
 PLACEHOLDER_RE = re.compile(r"\b(?:TODO|TBD|FIXME)\b|Lorem ipsum", re.IGNORECASE)
 
 
@@ -175,6 +278,12 @@ def collect_anchors(text: str) -> set[str]:
 
     headings.sort(key=lambda item: item[0])
 
+    explicit_ids = {
+        match.group(1)
+        for match in HTML_ID_RE.finditer(clean)
+        if match.group(1)
+    }
+
     anchors: set[str] = set()
     counts: dict[str, int] = {}
 
@@ -187,7 +296,7 @@ def collect_anchors(text: str) -> set[str]:
         counts[base] = index + 1
         anchors.add(slug)
 
-    return anchors
+    return anchors | explicit_ids
 
 
 def check_links(path: Path, text: str, anchor_cache: dict[Path, set[str]]) -> None:
@@ -247,7 +356,7 @@ def check_links(path: Path, text: str, anchor_cache: dict[Path, set[str]]) -> No
                 )
 
 
-def check_discussion_posts() -> None:
+def check_discussion_posts() -> dict[str, Path]:
     posts = sorted(
         p
         for p in (ROOT / "community" / "discussions").glob("*.md")
@@ -301,6 +410,116 @@ def check_discussion_posts() -> None:
                     add_error(
                         f"{post.relative_to(ROOT)}: unknown label '{label}'"
                     )
+
+    return titles
+
+
+def check_recognition_posts(titles: dict[str, Path]) -> None:
+    recognition_dir = ROOT / "community" / "discussions" / "recognition"
+    posts = sorted(
+        p
+        for p in recognition_dir.glob("*.md")
+        if p.name != "README.md" and re.match(r"^\d{2}-", p.name)
+    )
+
+    if len(posts) != EXPECTED_RECOGNITION_POSTS:
+        add_error(
+            "community/discussions/recognition: expected "
+            f"{EXPECTED_RECOGNITION_POSTS} posts, found {len(posts)}"
+        )
+
+    allowed_formats = {"Announcement", "Open-ended discussion", "Question and answer"}
+
+    for post in posts:
+        text = read_text(post)
+        relative = post.relative_to(ROOT)
+        metadata_match = re.search(r"(?s)<!--(.*?)-->", text)
+        if not metadata_match:
+            add_error(f"{relative}: missing hidden metadata comment")
+            continue
+
+        metadata = metadata_match.group(1)
+        for field in RECOGNITION_REQUIRED_METADATA:
+            if field not in metadata:
+                add_error(f"{relative}: metadata is missing '{field}'")
+
+        title_match = re.search(r"^Title:\s*(.+)$", metadata, re.MULTILINE)
+        if title_match:
+            title = title_match.group(1).strip()
+            if title in titles:
+                add_error(
+                    "duplicate discussion title: "
+                    f"'{title}' in {post.name} and {titles[title].name}"
+                )
+            titles[title] = post
+
+            first_heading = re.search(r"(?m)^#\s+(.+)$", text)
+            if first_heading and first_heading.group(1).strip() != title:
+                add_warning(
+                    f"{relative}: H1 does not match the metadata title exactly"
+                )
+
+        category_match = re.search(r"^Category:\s*(.+)$", metadata, re.MULTILINE)
+        if category_match:
+            category = category_match.group(1).strip()
+            if category not in KNOWN_DISCUSSION_CATEGORIES:
+                add_error(
+                    f"{relative}: unknown discussion category '{category}'"
+                )
+
+        format_match = re.search(r"^Format:\s*(.+)$", metadata, re.MULTILINE)
+        if format_match:
+            discussion_format = format_match.group(1).strip()
+            if discussion_format not in allowed_formats:
+                add_error(
+                    f"{relative}: unknown discussion format "
+                    f"'{discussion_format}'"
+                )
+
+        labels_match = re.search(r"^Labels:\s*(.+)$", metadata, re.MULTILINE)
+        if labels_match:
+            for label in [item.strip() for item in labels_match.group(1).split(",")]:
+                if label and label not in KNOWN_LABELS:
+                    add_error(f"{relative}: unknown label '{label}'")
+
+        publishing_match = re.search(
+            r"^Publishing:\s*(.+)$", metadata, re.MULTILINE
+        )
+        if publishing_match:
+            publishing = publishing_match.group(1).lower()
+            if "manual" not in publishing or "automatic" not in publishing:
+                add_error(
+                    f"{relative}: publishing metadata must state that the "
+                    "draft is manual and not automatic"
+                )
+
+
+def check_template_completeness() -> None:
+    for relative, required_sections in TEMPLATE_REQUIREMENTS.items():
+        path = ROOT / relative
+        if not path.exists():
+            continue
+        text = read_text(path).lower()
+        for section in required_sections:
+            if section.lower() not in text:
+                add_error(
+                    f"{relative}: missing required template section "
+                    f"'{section}'"
+                )
+
+
+def check_discussion_category_links(markdown_files: list[Path]) -> None:
+    allowed_slugs = set(KNOWN_DISCUSSION_CATEGORIES.values())
+
+    for path in markdown_files:
+        text = strip_code_and_comments(read_text(path))
+        for match in DISCUSSION_CATEGORY_URL_RE.finditer(text):
+            slug = match.group(1)
+            if slug not in allowed_slugs:
+                add_error(
+                    f"{path.relative_to(ROOT)}: unknown discussion category "
+                    f"URL slug '{slug}'"
+                )
 
 
 def check_issue_templates() -> None:
@@ -470,7 +689,10 @@ def main() -> int:
     for path in markdown_files:
         check_links(path, read_text(path), anchor_cache)
 
-    check_discussion_posts()
+    discussion_titles = check_discussion_posts()
+    check_recognition_posts(discussion_titles)
+    check_discussion_category_links(markdown_files)
+    check_template_completeness()
     check_issue_templates()
     check_svgs()
     check_pngs()

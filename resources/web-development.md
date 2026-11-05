@@ -1,6 +1,6 @@
 # Web Development Resources
 
-A practical, free path through modern web development: fundamentals first, then frameworks, testing, accessibility, performance, and deployment.
+A practical, free path through modern web development: fundamentals first, then frameworks, databases, APIs, testing, accessibility, performance, and deployment. For a staged sequence, see the [frontend](learning-roadmaps.md#frontend-developer), [backend](learning-roadmaps.md#backend-developer), and [full-stack](learning-roadmaps.md#full-stack-developer) roadmaps.
 
 > All core resources are free to access. Optional certificates or paid hosting are not required. See the [resource index](README.md) for selection criteria.
 
@@ -11,7 +11,7 @@ A practical, free path through modern web development: fundamentals first, then 
 | [MDN — Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn_web_development) | Structured curriculum from the web's reference documentation |
 | [web.dev — Learn](https://web.dev/learn/) | Short, practical courses from Google's web team |
 | [The Odin Project](https://www.theodinproject.com/) | Free, project-based full-stack curriculum |
-| [freeCodeCamp — Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/) | Hands-on HTML and CSS practice |
+| [freeCodeCamp — Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design) | Hands-on HTML and CSS practice |
 | [HTML Living Standard](https://html.spec.whatwg.org/) | The authoritative HTML specification |
 | [W3C Web Accessibility Initiative](https://www.w3.org/WAI/) | Accessibility standards and guidance |
 
@@ -23,7 +23,7 @@ A practical, free path through modern web development: fundamentals first, then 
 | [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/CSS) | Beginner | Layout, typography, color, and responsive design |
 | [web.dev — Learn CSS](https://web.dev/learn/css) | Beginner–Intermediate | Modern CSS in focused modules |
 | [CSS-Tricks — Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) | Beginner | Visual guide to Flexbox |
-| [CSS-Tricks — Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/) | Beginner | Visual guide to CSS Grid |
+| [CSS-Tricks — Grid Guide](https://css-tricks.com/complete-guide-css-grid-layout/) | Beginner | Visual guide to CSS Grid |
 | [Every Layout](https://every-layout.dev/) | Intermediate | Layout patterns that adapt to content |
 | [Modern CSS Solutions](https://moderncss.dev/) | Intermediate | Replacement patterns for older CSS techniques |
 
@@ -34,7 +34,7 @@ A practical, free path through modern web development: fundamentals first, then 
 | Resource | Level | Notes |
 | --- | --- | --- |
 | [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) | Beginner | Language fundamentals in a web context |
-| [MDN DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) | Beginner | Interacting with the page |
+| [MDN DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) | Beginner | Interacting with the page |
 | [MDN Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) | Intermediate | HTTP requests from the browser |
 | [JavaScript.info](https://javascript.info/) | Beginner–Advanced | Community textbook with exercises |
 | [web.dev — Learn JavaScript](https://web.dev/learn/javascript) | Beginner–Intermediate | Modern JavaScript concepts |
@@ -59,8 +59,8 @@ A practical, free path through modern web development: fundamentals first, then 
 | [Next.js Documentation](https://nextjs.org/docs) | Beginner–Advanced | Official framework documentation |
 | [Next.js Learn](https://nextjs.org/learn) | Beginner | Project-based official course |
 | [Next.js — App Router](https://nextjs.org/docs/app) | Intermediate | Routing, layouts, and rendering |
-| [Next.js — Data Fetching](https://nextjs.org/docs/app/building-your-application/data-fetching) | Intermediate | Server and client data patterns |
-| [Next.js — Deployment](https://nextjs.org/docs/app/building-your-application/deploying) | Intermediate | Deployment options and considerations |
+| [Next.js — Data Fetching](https://nextjs.org/docs/app/getting-started/fetching-data) | Intermediate | Server and client data patterns |
+| [Next.js — Deployment](https://nextjs.org/docs/app/getting-started/deploying) | Intermediate | Deployment options and considerations |
 
 **Practice idea:** Build a small content site with static pages, one dynamic route, metadata, and an accessible navigation menu.
 
@@ -68,15 +68,27 @@ A practical, free path through modern web development: fundamentals first, then 
 
 | Resource | Level | Notes |
 | --- | --- | --- |
-| [Node.js — Learn](https://nodejs.org/en/learn) | Beginner | Official Node.js learning path |
+| [Node.js — Learn](https://nodejs.org/learn) | Beginner | Official Node.js learning path |
 | [Node.js API Documentation](https://nodejs.org/api/) | All | Runtime and standard library reference |
-| [Express.js Guide](https://expressjs.com/en/guide/routing.html) | Beginner | Minimal Node.js web framework |
+| [Express.js Guide](https://expressjs.com/en/guide/routing/) | Beginner | Minimal Node.js web framework |
 | [Fastify Documentation](https://fastify.dev/docs/latest/) | Intermediate | Performance-focused Node.js framework |
 | [MDN — HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) | Beginner–Intermediate | Methods, status codes, headers, and caching |
-| [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html) | Beginner | Official relational database tutorial |
+| [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) | Intermediate | Describe an HTTP API as a reviewable contract |
+| [Databases and SQL](#databases-and-sql) | Beginner–Intermediate | Relational and document database foundations |
 | [Prisma Documentation](https://www.prisma.io/docs) | Intermediate | Type-safe database access for Node.js and TypeScript |
 
-**Practice idea:** Build a small REST API with validation, pagination, structured errors, and tests. Do not expose stack traces in production responses.
+**Practice idea:** Build a small REST API with validation, pagination, structured errors, and tests. Describe it in OpenAPI before implementing it. Do not expose stack traces in production responses.
+
+## Databases and SQL
+
+| Resource | Level | Notes |
+| --- | --- | --- |
+| [SQLBolt](https://sqlbolt.com/) | Beginner | Interactive SQL lessons in the browser |
+| [PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html) | Beginner | Official relational database tutorial and SQL path |
+| [SQLite Documentation](https://www.sqlite.org/docs.html) | Beginner–Advanced | Embedded database documentation and SQL reference |
+| [MongoDB Documentation](https://www.mongodb.com/docs/) | Intermediate | Document database concepts, queries, and operations |
+
+**Practice idea:** Model the same small feature in a relational database and a document database. Write down which constraints, joins, transactions, and migration path each choice makes easier or harder.
 
 ## TypeScript in web projects
 
@@ -84,7 +96,7 @@ A practical, free path through modern web development: fundamentals first, then 
 | --- | --- | --- |
 | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) | Beginner–Advanced | Official language guide |
 | [React — TypeScript](https://react.dev/learn/typescript) | Intermediate | Official React TypeScript guidance |
-| [Next.js — TypeScript](https://nextjs.org/docs/app/building-your-application/configuring/typescript) | Intermediate | TypeScript configuration in Next.js |
+| [Next.js — TypeScript](https://nextjs.org/docs/app/api-reference/config/typescript) | Intermediate | TypeScript configuration in Next.js |
 | [Total TypeScript — Beginners Tutorial](https://www.totaltypescript.com/tutorials/beginners-typescript) | Beginner | Free interactive tutorial |
 
 ## Accessibility
@@ -126,10 +138,10 @@ Accessibility is part of quality, not an optional feature.
 
 | Resource | Why it matters |
 | --- | --- |
-| [OWASP Top Ten](https://owasp.org/www-project-top-ten/) | Common web application security risks |
+| [OWASP Top Ten](https://owasp.org/projects/top-ten) | Common web application security risks |
 | [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) | Practical defenses for common features |
 | [MDN — Web Security](https://developer.mozilla.org/en-US/docs/Web/Security) | Browser security fundamentals |
-| [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) | Reducing injection risk |
+| [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) | Reducing injection risk |
 | [GitHub — Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning) | Prevent credential leaks |
 
 ## Deployment and developer experience
@@ -154,6 +166,10 @@ Accessibility is part of quality, not an optional feature.
 7. **Backend and database.** Build an API with validation, authentication boundaries, and tests.
 8. **Deployment and observability.** Ship something, measure it, and learn from failures.
 
+## Mobile and cross-platform
+
+Web skills transfer to mobile, but mobile has different layout, lifecycle, permission, offline, and release constraints. See the [app development collection](app-development.md) and the [Mobile App Developer roadmap](learning-roadmaps.md#mobile-app-developer) when you want to build for Android, iOS, Flutter, React Native, or Expo.
+
 ## Avoid
 
 - Learning five frameworks before building one complete project.
@@ -165,4 +181,4 @@ Accessibility is part of quality, not an optional feature.
 
 ---
 
-**Related:** [Programming](programming.md) · [AI & Machine Learning](artificial-intelligence.md) · [Open Source](open-source.md) · [Web Development discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions)
+**Related:** [Learning Roadmaps](learning-roadmaps.md) · [Programming](programming.md) · [App Development](app-development.md) · [AI & Machine Learning](artificial-intelligence.md) · [Developer Tools](developer-tools.md) · [Open Source](open-source.md) · [Web Development discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/web-development)

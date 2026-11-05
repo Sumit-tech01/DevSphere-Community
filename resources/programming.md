@@ -1,6 +1,6 @@
 # Programming Resources
 
-A curated path through programming languages, core computer science, and engineering practice. Start with one language, build small projects, and add depth over time.
+A curated path through programming languages, core computer science, and engineering practice. Start with one language, build small projects, and add depth over time. For a sequence by role, see the [learning roadmaps](learning-roadmaps.md).
 
 > All resources are free to access. Optional certificates or paid upgrades are not required. See the [resource index](README.md) for selection criteria.
 
@@ -36,7 +36,7 @@ A curated path through programming languages, core computer science, and enginee
 | [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) | All | Language and built-in objects |
 | [ECMAScript Language Specification](https://tc39.es/ecma262/) | Advanced | The official specification |
 | [JavaScript.info](https://javascript.info/) | Beginner–Advanced | Recognized community textbook with exercises |
-| [Node.js Learn](https://nodejs.org/en/learn) | Beginner | Official Node.js learning material |
+| [Node.js Learn](https://nodejs.org/learn) | Beginner | Official Node.js learning material |
 | [You Don't Know JS Yet](https://github.com/getify/You-Dont-Know-JS) | Intermediate | Free book series on JavaScript fundamentals |
 
 **Practice idea:** Build a small browser app that fetches data from a public API, handles loading and error states, and renders accessible results.
@@ -53,12 +53,37 @@ A curated path through programming languages, core computer science, and enginee
 
 **Practice idea:** Convert a small JavaScript project to TypeScript, enable `strict`, and replace `any` with meaningful types.
 
+## Go
+
+| Resource | Level | Notes |
+| --- | --- | --- |
+| [A Tour of Go](https://go.dev/tour/) | Beginner | Interactive official introduction |
+| [Go Documentation](https://go.dev/doc/) | All | Official guides, references, and tutorials |
+| [Effective Go](https://go.dev/doc/effective_go) | Intermediate | Idiomatic Go patterns and conventions |
+| [Go by Example](https://gobyexample.com/) | Beginner–Intermediate | Annotated programs covering common tasks |
+| [Go Packages](https://pkg.go.dev/) | All | Package documentation and discovery |
+| [The Go Blog](https://go.dev/blog/) | Intermediate | Language, tooling, and standard-library updates |
+
+**Practice idea:** Build a small HTTP service with the standard library, explicit error handling, table-driven tests, and a graceful shutdown path. Add one external dependency only after you can explain why.
+
+## Rust
+
+| Resource | Level | Notes |
+| --- | --- | --- |
+| [Rust — Learn](https://rust-lang.org/learn/) | Beginner | Official entry point for learning Rust |
+| [The Rust Programming Language](https://doc.rust-lang.org/book/) | Beginner–Intermediate | The official book |
+| [Rust by Example](https://doc.rust-lang.org/rust-by-example/) | Beginner–Intermediate | Learn through runnable examples |
+| [The Cargo Book](https://doc.rust-lang.org/cargo/) | Intermediate | Packages, workspaces, builds, and publishing |
+| [Clippy](https://doc.rust-lang.org/clippy/) | Intermediate | Official linter and lint documentation |
+
+**Practice idea:** Build a command-line tool that reads a file, handles errors without panicking, and includes unit and integration tests. Run `cargo fmt`, `cargo clippy`, and `cargo test` before sharing it.
+
 ## C++
 
 | Resource | Level | Notes |
 | --- | --- | --- |
 | [isocpp.org — Get Started](https://isocpp.org/get-started) | Beginner | Official direction for learning C++ |
-| [C++ Reference](https://en.cppreference.com/w/) | All | Language and library reference |
+| [C++ Reference](https://en.cppreference.com/) | All | Language and library reference |
 | [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | Intermediate | Guidance for modern, safe C++ |
 | [isocpp.org FAQ](https://isocpp.org/faq) | All | Common questions answered by the standards community |
 | [Compiler Explorer](https://godbolt.org/) | Intermediate | Inspect generated assembly in the browser |
@@ -73,7 +98,7 @@ A curated path through programming languages, core computer science, and enginee
 | [Java Documentation](https://docs.oracle.com/en/java/) | All | Official documentation hub |
 | [OpenJDK](https://openjdk.org/) | Intermediate | Open-source Java development |
 | [Java Tutorials](https://docs.oracle.com/javase/tutorial/) | Beginner–Intermediate | Long-standing official tutorials |
-| [Spring Guides](https://spring.io/guides) | Intermediate | Practical guides for Java applications |
+| [Spring Guides](https://spring.io/guides/) | Intermediate | Practical guides for Java applications |
 
 **Practice idea:** Build a REST API with Java, add validation, and write integration tests. Keep the domain model separate from transport details.
 
@@ -97,7 +122,7 @@ A curated path through programming languages, core computer science, and enginee
 | Design principles | [The Twelve-Factor App](https://12factor.net/) |
 | Code review | [Google Engineering Practices — Code Review](https://google.github.io/eng-practices/review/) |
 | Debugging | [Rubber Duck Debugging](https://rubberduckdebugging.com/) |
-| Security | [OWASP Top Ten](https://owasp.org/www-project-top-ten/) |
+| Security | [OWASP Top Ten](https://owasp.org/projects/top-ten) |
 
 ## Suggested learning sequence
 
@@ -120,4 +145,4 @@ A curated path through programming languages, core computer science, and enginee
 
 ---
 
-**Related:** [Web Development](web-development.md) · [AI & Machine Learning](artificial-intelligence.md) · [Open Source](open-source.md) · [Programming discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions)
+**Related:** [Learning Roadmaps](learning-roadmaps.md) · [Web Development](web-development.md) · [AI & Machine Learning](artificial-intelligence.md) · [Open Source](open-source.md) · [Programming discussions](https://github.com/Sumit-tech01/DevSphere-Community/discussions/categories/programming)

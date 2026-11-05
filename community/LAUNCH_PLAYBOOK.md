@@ -4,7 +4,7 @@ This playbook covers the public launch of DevSphere: the 14-day publishing sched
 
 It does **not** replace the [Community Guidelines](COMMUNITY_GUIDELINES.md), [Moderation Policy](MODERATION_POLICY.md), or [Discussion Setup Guide](DISCUSSION_SETUP.md). It is the operating plan that ties them together.
 
-> **Status (3 November 2026):** the repository, documentation, branding, and discussion drafts are complete. The social preview is uploaded and verified. Category names, formats, legacy-category cleanup, and pinned posts require manual attention. Run `python3 scripts/verify_discussions.py` for the current GitHub state.
+> **Status (3 November 2026):** the repository, documentation, branding, and discussion drafts are complete. The social preview is uploaded and verified. The live Discussions configuration passes the automated verifier: 12 clean categories, 12/12 emoji metadata, and launch posts #1–#3 correctly categorized and pinned. One manual UI check remains for the Announcements format. Remaining public-launch actions are optional seed posts, the founder introduction, LinkedIn promotion, and profile updates. Run `python3 scripts/verify_discussions.py` for the current GitHub state.
 
 ---
 
@@ -56,10 +56,10 @@ Complete this before the launch post goes live.
 | Confirm Discussions is enabled | Repository settings | Verified enabled |
 | Confirm discussions #1–#3 are preserved | Discussions | Verified |
 | Confirm #1 is pinned | Announcements | Verified pinned |
-| Create the 12 categories | Discussions settings | Pending manual |
-| Move #2 to Introductions | Discussions | Pending categories |
-| Move #3 to Project Showcase | Discussions | Pending categories |
-| Publish the "Start Here" post | Introductions | Pending |
+| Confirm the 12 clean categories and emoji metadata | Discussions settings | Verified 3 November 2026 |
+| Confirm #2 is in Introductions and pinned | Discussions | Verified 3 November 2026 |
+| Confirm #3 is in Project Showcase and pinned | Discussions | Verified 3 November 2026 |
+| Publish a separate "Start Here" post | Introductions | Optional; do not duplicate the live #2 introduction thread |
 | Upload the social preview | Settings → General | Verified uploaded 3 November 2026 |
 | Confirm CI is green | Actions | Verified |
 | Re-check all launch links | Repository | Verified at preparation |
@@ -88,9 +88,9 @@ The schedule starts on the recommended launch date. Adjust the dates, not the sp
 | Day | Date | Action | Category | Source |
 | --- | --- | --- | --- | --- |
 | 1 | Mon 9 Nov | Keep #1 pinned as the official announcement | Announcements | Existing #1 |
-| 1 | Mon 9 Nov | Move #2 and pin it | Introductions | Existing #2 |
-| 1 | Mon 9 Nov | Move #3 and pin it | Project Showcase | Existing #3 |
-| 1 | Mon 9 Nov | Publish "Welcome to DevSphere — Start Here" | Introductions | Draft 02 |
+| 1 | Mon 9 Nov | Confirm #2 is in Introductions and pinned; reply to introductions | Introductions | Existing #2 |
+| 1 | Mon 9 Nov | Confirm #3 is in Project Showcase and pinned; reply to showcases | Project Showcase | Existing #3 |
+| 1 | Mon 9 Nov | Optional orientation note only if it adds something #2 does not cover | Introductions | Draft 02 |
 | 2 | Tue 10 Nov | Publish the founder introduction and ask what members are building | General Discussion | Section 6 below |
 | 3 | Wed 11 Nov | No new thread; reply to introductions and showcase posts | — | — |
 | 4 | Thu 12 Nov | Publish "Open-Source Contribution Opportunities" | Collaboration | Draft 11 |
@@ -130,37 +130,31 @@ Do not rush these into the first 14 days:
 
 The full procedure is in the [Discussion Setup Guide](DISCUSSION_SETUP.md). This is the execution checklist for the current repository state.
 
-### State observed on 3 November 2026
+### Verified state on 3 November 2026
 
 - Discussions is enabled.
-- All 12 target categories exist, but 11 of them have the emoji embedded in the **Name** field. This produces slugs that begin with a hyphen, such as `-general-discussion`.
-- Four legacy categories remain: Ideas, Polls, Q&A, and Show and tell. They contain no discussions and can be deleted.
+- Exactly 12 categories exist with clean names and stable slugs.
+- Emoji metadata is returned for 12/12 categories.
+- Questions & Help uses the question-and-answer format.
 - Discussion #1 is in Announcements, #2 is in Introductions, and #3 is in Project Showcase. Their URLs did not change when #2 and #3 were moved.
-- #1 is pinned. #2 and #3 still need to be pinned manually.
+- All three launch posts are pinned.
+- Every live category link opens without a 404.
 - No discussion category creation API, REST endpoint, or `gh` command is available.
 
-### Manual checklist
+### Remaining manual checks
 
-> **Fix names in place.** Select the category, remove the emoji from the **Name** field, and choose the emoji with the picker. Do not delete and recreate a target category that already contains a discussion; deleting a category can move its discussions.
+> **Edit names in place if the structure ever changes.** Select the category, remove the emoji from the **Name** field, and choose the emoji with the picker. Do not delete and recreate a target category that already contains a discussion; deleting a category can move its discussions.
 
-- [ ] **Announcements** — keep the name plain and the 📣 emoji; confirm the **Announcement** format.
-- [ ] **Introductions** — Name `Introductions`, emoji 👋, open-ended format.
-- [ ] **General Discussion** — Name `General Discussion`, emoji 💬, open-ended format.
-- [ ] **Programming** — Name `Programming`, emoji 💻, open-ended format.
-- [ ] **AI & Machine Learning** — Name `AI & Machine Learning`, emoji 🤖, open-ended format.
-- [ ] **Web Development** — Name `Web Development`, emoji 🌐, open-ended format.
-- [ ] **App Development** — Name `App Development`, emoji 📱, open-ended format.
-- [ ] **Project Showcase** — Name `Project Showcase`, emoji 🚀, open-ended format.
-- [ ] **Questions & Help** — Name `Questions & Help`, emoji 🙋, question-and-answer format.
-- [ ] **Hackathons & Challenges** — Name `Hackathons & Challenges`, emoji 🏆, open-ended format.
-- [ ] **Collaboration** — Name `Collaboration`, emoji 🤝, open-ended format.
-- [ ] **Career & Opportunities** — Name `Career & Opportunities`, emoji 🎓, open-ended format.
-- [ ] Delete **Ideas**, **Polls**, **Q&A**, and **Show and tell** after confirming each is empty.
-- [ ] Confirm the final count is exactly 12.
-- [ ] Order the categories: Announcements, Introductions, General Discussion, Programming, AI & Machine Learning, Web Development, App Development, Project Showcase, Questions & Help, Hackathons & Challenges, Collaboration, Career & Opportunities.
-- [ ] Confirm #1 is in Announcements, #2 is in Introductions, and #3 is in Project Showcase.
-- [ ] Pin #2 and #3. GitHub's GraphQL API exposes no discussion-pin mutation, so use the web interface.
-- [ ] Verify every category link opens without a 404.
+- [x] All 12 target categories exist with the documented names and emojis.
+- [x] Category names contain no embedded emoji.
+- [x] Questions & Help uses the question-and-answer format.
+- [x] #1 is in Announcements, #2 is in Introductions, and #3 is in Project Showcase.
+- [x] #1, #2, and #3 are pinned.
+- [x] Every category link opens without a 404.
+- [ ] Confirm the visible sidebar order in the GitHub UI: Announcements, Introductions, General Discussion, Programming, AI & Machine Learning, Web Development, App Development, Project Showcase, Questions & Help, Hackathons & Challenges, Collaboration, Career & Opportunities.
+- [ ] Confirm Announcements uses the **Announcement** format.
+- [ ] Confirm a non-maintainer account cannot start a discussion in Announcements.
+- [ ] Confirm a test question can be marked as answered in Questions & Help.
 
 ### Verification command
 
@@ -571,7 +565,7 @@ Template:
 | Time | Action |
 | --- | --- |
 | T-1 day | Confirm categories, pinned posts, social preview, links, and CI. Make no risky changes. |
-| 09:00 UTC | Publish the Start Here post; move and pin #2 and #3; confirm #1 is pinned. |
+| 09:00 UTC | Confirm #1–#3 are correctly categorized and pinned; publish an optional orientation note only if it adds something new. |
 | 09:15 UTC | Publish the LinkedIn announcement. |
 | 09:30 UTC | Update the GitHub profile status and pin the repository. |
 | 10:00 UTC | Send 10–15 personal invitations to people you already know. |
@@ -590,9 +584,11 @@ Do not post a "we reached X members" update unless the number is real and the de
 - [x] Repository is public with `main` as the default branch.
 - [x] Description, homepage, and 12 topics are set.
 - [x] Discussions is enabled.
-- [x] Discussions #1, #2, and #3 are preserved.
-- [x] #2 is in Introductions and #3 is in Project Showcase; their URLs are unchanged.
-- [x] #1 is pinned in Announcements.
+- [x] Exactly 12 categories exist with clean names and stable slugs.
+- [x] Emoji metadata is returned for 12/12 categories.
+- [x] Discussions #1, #2, and #3 are preserved and correctly categorized.
+- [x] #1, #2, and #3 are pinned.
+- [x] Questions & Help uses the question-and-answer format.
 - [x] Repository validation and Markdown lint pass.
 - [x] The social preview file is 1280 × 640, visually readable, uploaded, and verified against the repository OG image.
 - [x] Twelve discussion drafts are reviewed and indexed.
@@ -601,10 +597,10 @@ Do not post a "we reached X members" update unless the number is real and the de
 
 ### Pending manual actions
 
-- [ ] Remove the embedded emoji from the 11 category names and select each emoji separately.
-- [ ] Delete the empty Ideas, Polls, Q&A, and Show and tell categories.
-- [ ] Pin #2 and #3.
-- [ ] Publish the Start Here post.
+- [ ] Confirm the Announcements format and maintainer-only posting in the GitHub UI.
+- [ ] Confirm the visible category sidebar order in the GitHub UI.
+- [ ] Confirm a test question can be marked as answered in Questions & Help.
+- [ ] Publish an optional orientation note only if it adds something the live #2 does not cover.
 - [ ] Publish the founder introduction.
 - [ ] Publish the LinkedIn announcement.
 - [ ] Update the GitHub profile promotion block.
@@ -612,7 +608,7 @@ Do not post a "we reached X members" update unless the number is real and the de
 
 ### Final gate
 
-Launch only when the categories, pinned posts, social preview, and discussion placement checks pass. If a manual step is incomplete, say so; do not describe the configuration as finished.
+Launch promotion only when the automated checks pass and the manual checks are either completed or honestly described as pending. Categories, emoji metadata, discussion placement, and pinned posts already pass. Do not claim the Announcements format or sidebar order is verified until it has been checked in the GitHub interface.
 
 ---
 
